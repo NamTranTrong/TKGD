@@ -1,51 +1,65 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global Styles */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Header */
-  
-  .header h1 {
-    font-size: 24px;
-    color: #333;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .navbar li{
-    padding : 0 20px;
-  }
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
 
-  .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Header */
 
-  .logo {
-    width: 135px; /* Độ rộng của logo */
-    height: 100px; /* Chiều cao của logo */
-    background-size: cover; /* Kích thước ảnh logo sẽ được giữ nguyên tỷ lệ và che đậy hoàn toàn phần tử chứa nó */
-    background-position: center; /* Vị trí căn chỉnh ảnh logo trong phần tử chứa nó */
-  }
+.header h1 {
+  font-size: 24px;
+  color: #333;
+}
 
-  .elementor-button{
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -.1px;
-    fill: #130f26;
-    color: #130f26;
-    background-color: #F6DE2D;
-    border-radius: 8px 8px 8px 8px;
-    padding: 10px 20px;
-    margin: -10px;
-  }
+.navbar li {
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 135px;
+  /* Độ rộng của logo */
+  height: 100px;
+  /* Chiều cao của logo */
+  background-size: cover;
+  /* Kích thước ảnh logo sẽ được giữ nguyên tỷ lệ và che đậy hoàn toàn phần tử chứa nó */
+  background-position: center;
+  /* Vị trí căn chỉnh ảnh logo trong phần tử chứa nó */
+}
+
+.elementor-button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -.1px;
+  fill: #130f26;
+  color: #130f26;
+  background-color: #F6DE2D;
+  border-radius: 8px 8px 8px 8px;
+  padding: 10px 20px;
+  margin: -10px;
+}
+
+/* #test1 {
+  height: 100px;
+  background-color: green;
+}
+
+.search-box{
+  max-width: 40em;
+  align-self: flex-end;
+} */
