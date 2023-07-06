@@ -54,12 +54,27 @@ body {
   margin: -10px;
 }
 
-/* #test1 {
-  height: 100px;
-  background-color: green;
+/* .box {
+  content: "";
+  height: 1000px;
+}
+*/
+
+.light-yellow {
+  background-color: #FEFBE3;
 }
 
-.search-box{
-  max-width: 40em;
-  align-self: flex-end;
+/*
+#panda-img{
+  max-width: 100%;
+  height: auto;
 } */
+
+.osward-font {
+  font-family: 'Oswald', sans-serif;
+}
+
+.huge-text {
+  font-size: 8em;
+}
+
