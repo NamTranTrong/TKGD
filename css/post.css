@@ -1,0 +1,80 @@
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-element-top{
+    background-color: #F6DE2D;
+    height: 400px;
+
+}
+
+.element-top{
+    text-align: center;
+    padding-top:9%;
+    overflow: hidden;
+}
+
+.text-1{
+    font-weight:600;
+}
+
+.img-post{
+    position: relative;
+    height: 230px;
+    width: 270px;
+    left:40px;
+}
+
+
+.manual{
+    min-height: 700px;
+    display: flex;
+}
+
+.col-manual-left{
+    padding-top: 5%;
+    padding-left: 22%;
+}
+
+.col-manual-right{
+    padding-top:12%; 
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height:29px;
+    margin-left: 5%;
+}
+
+.text-steps{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-part{
+    width: 65%;
+    padding-top: 20px;
+}
+
+.img-iphone{
+    width: 350px;
+    height: auto;
+}
+
+.divider {
+    height: 1px;
+    width: 50%;
+    background-color: #F6DE2D;
+    margin: 0 auto; /* căn giữa theo chiều ngang */
+}
+
+.section-form-post{
+    
+}
+
+.form-post{
+    margin-top: 5%;
+    border-radius: 5%;
+    height: 700px;
+    background-color: blanchedalmond;
+}
