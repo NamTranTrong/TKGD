@@ -3,3 +3,4 @@
 # Tương tự với file .js
 # Chia từng phần mình làm thành các section
 # Sử dụng Bootstrap 5.0.2
+# Sử dụng font-awsome 6.4.0
