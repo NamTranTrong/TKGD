@@ -1,0 +1,16 @@
+.h-1024px {
+    height: 1024px;
+}
+
+.resetbtn,
+.resetbtn:hover,
+.resetbtn:focus,
+.resetbtn:focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: black;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
