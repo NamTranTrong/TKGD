@@ -1,5 +1,46 @@
-.col{
+.col {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#section-4 {
+    background: #FEFBE3;
+}
+
+.videobox {
+    height: 160px;
+    width: 240px;
+    background: #000;
+    border-radius: 30px;
+}
+
+.huge-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+}
+
+#section-5 p {
+    max-width: 60vw;
+    text-align: center;
+}
+
+.imagebox {
+    max-width: 200px !important;
+}
+
+.linebreak-art {
+    border-radius: 50px;
+    border: 2px solid orange;
+    background: none;
+    height: 5px;
+}
+
+#section-5 .figure-img {
+    display: flex;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    transform: translate(0, -40px);
 }
