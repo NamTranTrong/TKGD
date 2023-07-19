@@ -328,3 +328,15 @@ body {
 .dummy-element{
   height: 140px;
 }
+
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
