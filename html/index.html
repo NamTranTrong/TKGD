@@ -287,12 +287,37 @@
             <section id="section-6">
 
             </section>
+
+            <!-- scroll up btn -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+            <script>
+                // Get the button:
+                let mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
         </main>
 
         <!-- footer -->
         <footer class="footer-distributed">
             <div class="footer-left">
-                <h3>Company<span>logo</span></h3>
+                <h3>Company<span><img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo"
+                            style="height: 4rem;"></span></h3>
                 <p class="footer-links">
                     <a href="#" class="link-1">Home</a>
                     <a href="#">Blog</a>
@@ -301,7 +326,7 @@
                     <a href="#">Faq</a>
                     <a href="#">Contact</a>
                 </p>
-                <p class="footer-company-name">Company Name © 2015</p>
+                <p class="footer-company-name">The 3R © 2015</p>
             </div>
             <div class="footer-center">
                 <div>
