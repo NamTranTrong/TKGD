@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap@5.0.2.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../js/bootstrap@5.0.2.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -130,44 +131,45 @@
             </div>
         </section>
 
+        <section class="vh-100 form-signin">
+            <div class="container-fluid login">
+                <form>
+                    <div>
+                        <h1>Log in</h1>
+                    </div>
+                    <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+
+                    <div class="input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="username" style="float:left"><b>Username or Email</b></label>
+                        <input id="username" type="text" class="form-control w-100" placeholder="Enter Username or Email"
+                               name="username" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="password"><b>Password</b></label>
+                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
+                               name="password" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="confirm-password"><b>Confirm Password</b></label>
+                        <input id="confirm-password" type="password" class="form-control w-100"
+                               placeholder="Enter Confirm Password" name="confirm-password" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Sign in" class="btn login_btn" formaction="" />
+                    </div>
+                </form>
+            </div>
+        </section>
         <!-- main -->
     </main>
 
-    <section class="vh-100">
-        <div class="container-fluid login">
-            <form>
-                <div>
-                    <h1>Log in</h1>
-                </div>
-                <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
 
-                <div class="input-group form-group" style="flex-direction: column;">
-                    <label class="h6" for="username" style="float:left"><b>Username or Email</b></label>
-                    <input id="username" type="text" class="form-control w-100" placeholder="Enter Username or Email"
-                        name="username" />
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="input-group form-group" style="flex-direction: column;">
-                    <label class="h6" for="password"><b>Password</b></label>
-                    <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
-                        name="password" />
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="input-group form-group" style="flex-direction: column;">
-                    <label class="h6" for="confirm-password"><b>Confirm Password</b></label>
-                    <input id="confirm-password" type="password" class="form-control w-100"
-                        placeholder="Enter Confirm Password" name="confirm-password" />
-                    <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <input type="submit" value="Sign in" class="btn login_btn" formaction="" />
-                </div>
-            </form>
-        </div>
-    </section>
     <footer class="footer-distributed">
         <div class="footer-left">
 
