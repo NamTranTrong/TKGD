@@ -19,10 +19,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 /* CSS */
 @media (min-width: 800px) {
     .wrapper {
