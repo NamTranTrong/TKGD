@@ -1,47 +1,55 @@
 .h-1024px {
-    height: 1024px;
+  height: 1024px;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 .resetbtn,
 .resetbtn:hover,
 .resetbtn:focus,
 .resetbtn:focus-visible {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: black;
-    background-color: white;
-    padding: 0;
-    margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: black;
+  background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .tf-inter {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* CSS */
 @media (min-width: 800px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 20% 1fr;
-        grid-gap: 1rem;
-    }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 1rem;
+  }
 
-    aside {
-        align-self: start;
-    }
+  aside {
+    align-self: start;
+  }
 }
 
 .brand-list {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center center;
+  gap: 1rem;
 }
 
 .brand-logo {
-    display: block;
-    box-sizing: border-box;
-    object-fit: contain;
+  display: block;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.sidebar-item {
+  padding: 8px;
 }

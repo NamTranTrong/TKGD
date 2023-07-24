@@ -1,26 +1,26 @@
-.login{
-    padding: 25px;
-    border: #E9EAEE 1px solid;
-    display:flex;
-    justify-content:center;
-    width: 25%;
-    height: 75%;
-    align-items: center;
-    font-size: 20px;
-    box-shadow: 1px 2px 5px #999999;
-    font-family: "Cambria";
+.login {
+  padding: 25px;
+  border: #e9eaee 1px solid;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 75%;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 1px 2px 5px #999999;
+  font-family: "Cambria";
 }
-div{
-    padding: 15px 0px 15px 0px;
+div {
+  padding: 15px 0px 15px 0px;
 }
-a{
-    color: #20c997;
+a {
+  color: #20c997;
 }
 
-.login_btn{
-    background: #F6DE2D;
-    width: 100px;
-    border-radius: 20px;
-    color: white;
-    font-size: large;
+.login_btn {
+  background: #f6de2d;
+  width: 100px;
+  border-radius: 20px;
+  color: white;
+  font-size: large;
 }
