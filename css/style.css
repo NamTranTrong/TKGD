@@ -114,6 +114,30 @@ body {
   display: flex;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #f4e04d;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: #f4e04d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* footer */
 
 .footer-distributed {

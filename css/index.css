@@ -48,3 +48,33 @@
   background: #fff;
   transform: translate(0, -40px);
 }
+
+.triangle-container {
+  position: relative;
+  margin: auto;
+  width: 100%; /* Adjust the width and height as needed */
+  height: 300px; /* To create a triangle, the height should be less than the width */
+}
+
+.vertex {
+  position: absolute;
+  width: 12rem; /* Adjust the size of the vertex images */
+  height: auto; /* Adjust the size of the vertex images */
+}
+
+/* Define the coordinates for the vertices */
+.vertex-1 {
+  top: 10px;
+  left: calc(32%);
+}
+
+.vertex-3 {
+  top: 10px;
+  right: calc(32%);
+}
+
+.vertex-2 {
+  z-index: 1;
+  top: 30px;
+  left: calc(50% - 6rem);
+}

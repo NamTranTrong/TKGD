@@ -6,7 +6,8 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: linear-gradient(135deg, #fffc00 20%, #d2561b82 80%);
   color: black;
   cursor: pointer;
   padding: 10px;
@@ -19,6 +20,5 @@
 }
 
 #myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
+  background-image: linear-gradient(135deg, #d2561b82 20%, #fffc00 80%);
 }
