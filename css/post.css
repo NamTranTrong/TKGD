@@ -63,7 +63,8 @@
   height: 1px;
   width: 50%;
   background-color: #f6de2d;
-  margin: 0 auto; /* căn giữa theo chiều ngang */
+  margin: 0 auto;
+  /* căn giữa theo chiều ngang */
 }
 
 .section-form-post {
@@ -78,12 +79,12 @@
   padding-top: 30px;
 }
 
-.form-post {
-}
+.form-post {}
 
 .form-post-left {
   padding-left: 5%;
 }
+
 .form-post-right {
   padding-left: 5%;
 }
@@ -159,6 +160,7 @@ textarea {
   text-align: left;
   margin-top: 170px;
 }
+
 .text-tags {
   text-align: left;
   margin-top: 20px;

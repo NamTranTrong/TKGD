@@ -17,6 +17,31 @@ body {
   color: #333;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  z-index: 999;
+}
+
+
+.dummy-element {
+  height: 120px; /* Đặt chiều cao tùy ý tương ứng với chiều cao của header */
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+section.animate {
+  opacity: 2;
+  transform: translateY(0);
+}
+
 .navbar {
   border-bottom: 1px solid #e8e6e6;
 }
@@ -335,3 +360,26 @@ body {
   max-width: 40em;
   align-self: flex-end;
 } */
+
+.custom-link {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 5px; /* Space for the line */
+}
+
+.custom-link::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 0;
+  height: 4px; /* Line thickness */
+  background-color: #f6de2d; /* Line color */
+  transition: width 0.3s ease; /* Animation duration and timing function */
+}
+
+.custom-link:hover::after {
+  width: 70%; /* Line width when hovering */
+}

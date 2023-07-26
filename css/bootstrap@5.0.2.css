@@ -3933,23 +3933,24 @@ fieldset:disabled .btn {
     position: absolute;
     z-index: 1000;
     display: none;
-    min-width: 10rem;
+    min-width: 15rem;
     padding: .5rem 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 18px;
     color: #212529;
     text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    /* border: 1px solid rgba(0, 0, 0, .15); */
+    border-radius: .25rem;
+    margin-top: 20px;
 }
 
 .dropdown-menu[data-bs-popper] {
     top: 100%;
     left: 0;
-    margin-top: .125rem
+    /* margin-top: .125rem */
 }
 
 .dropdown-menu-start {
@@ -4174,13 +4175,16 @@ fieldset:disabled .btn {
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
+    padding-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #1e2125;
-    background-color: #e9ecef
+    background-color: #edd93d78;
+
 }
 
 .dropdown-item.active,
@@ -4229,7 +4233,7 @@ fieldset:disabled .btn {
 .dropdown-menu-dark .dropdown-item:focus,
 .dropdown-menu-dark .dropdown-item:hover {
     color: #fff;
-    background-color: rgba(255, 255, 255, .15)
+    background-color: rgba(255, 255, 255, .15);
 }
 
 .dropdown-menu-dark .dropdown-item.active,
@@ -4379,7 +4383,8 @@ fieldset:disabled .btn {
     padding: .5rem 1rem;
     color: #0d6efd;
     text-decoration: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    font-size: 18px;
 }
 
 @media (prefers-reduced-motion:reduce) {

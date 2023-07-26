@@ -17,6 +17,8 @@
   box-shadow: #00000030 2px 1px;
   width: 50px;
   height: 50px;
+  background-image: linear-gradient(135deg, #fffc00 20%, #d2561b82 80%);
+  transition: 1s;
 }
 
 #myBtn:hover {
