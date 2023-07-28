@@ -1,3 +1,203 @@
-.about-product{
-    height: 100vh;
+.about-product {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
+
+.about-product-left {
+    height: 100%;
+    position: relative;
+}
+
+.about-product-right {
+    height: 100%;
+}
+
+.list-img-detail {
+    height: 100%;
+    /* Đảm bảo chiều cao là 100% của section cha */
+    width: 25%;
+    /* Chiếm 25% chiều rộng của section cha */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* Xếp các ảnh thành cột dọc */
+    justify-content: space-between;
+    /* Căn giữa các ảnh theo chiều dọc */
+    gap: 15px;
+    /* Khoảng cách 25px giữa các ảnh */
+    position: absolute;
+}
+
+
+.list-img-detail img {
+    width: 150px;
+    height: 135px;
+}
+
+.div-img-main {
+    width: 74%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+.img-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.info-product {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.name-brand-price {
+    margin-bottom: 60px;
+}
+
+.list-couleur-img {
+    display: flex;
+    margin-top: 10px;
+}
+
+.couleur-img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.couleur-img:hover {
+    background-color: #ebd21b55;
+}
+
+.couleur-img-1 {
+    width: 40px;
+    height: 40px;
+}
+
+.couleur-img-2 {
+    width: 38px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.couleur-img-3 {
+    width: 45px;
+    height: 60px;
+    margin-top: -9px;
+}
+
+.button-pay{
+    margin-top: 30px;
+}
+
+.codepro-custom-btn {
+    width: 500px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 10px 25px; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
+    outline: none
+}
+
+.codepro-btn-7 {
+    background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgb(255 240 0) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none
+}
+
+.codepro-btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top:5px;
+}
+
+.codepro-btn-7:before,
+.codepro-btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, .9), -4px -4px 5px 0 rgba(255, 255, 255, .9), 7px 7px 20px 0 rgba(0, 0, 0, .2), 4px 4px 5px 0 rgba(0, 0, 0, .3);
+    transition: all 0.3s ease
+}
+
+.codepro-btn-7:before {
+    height: 0%;
+    width: 2px
+}
+
+.codepro-btn-7:after {
+    width: 0%;
+    height: 2px
+}
+
+.codepro-btn-7:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent
+}
+
+.codepro-btn-7:hover:before {
+    height: 100%
+}
+
+.codepro-btn-7:hover:after {
+    width: 100%
+}
+
+.codepro-btn-7 span:before,
+.codepro-btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, .9), -4px -4px 5px 0 rgba(255, 255, 255, .9), 7px 7px 20px 0 rgba(0, 0, 0, .2), 4px 4px 5px 0 rgba(0, 0, 0, .3);
+    transition: all 0.3s ease
+}
+
+.codepro-btn-7 span:before {
+    width: 2px;
+    height: 0%
+}
+
+.codepro-btn-7 span:after {
+    height: 2px;
+    width: 0%
+}
+
+.codepro-btn-7 span:hover:before {
+    height: 100%
+}
+
+.codepro-btn-7 span:hover:after {
+    width: 100%
+}
+
+.description{
+    margin-top: 30px;
+    width: 80%;
+}
+
