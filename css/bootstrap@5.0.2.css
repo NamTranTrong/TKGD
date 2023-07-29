@@ -3208,9 +3208,8 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d
+    color: #000000;
+    background-color: #ddd;
 }
 
 .btn-secondary:hover {
@@ -3254,7 +3253,7 @@ fieldset:disabled .btn {
 
 .btn-success {
     color: #fff;
-    background-color: #198754;
+    background-color: #80AD38;
     border-color: #198754
 }
 
@@ -4381,7 +4380,7 @@ fieldset:disabled .btn {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: #0d6efd;
+    color: #000;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     font-size: 18px;
@@ -4936,7 +4935,6 @@ fieldset:disabled .btn {
 .card-header {
     padding: .5rem 1rem;
     margin-bottom: 0;
-    background-color: rgba(0, 0, 0, .03);
     border-bottom: 1px solid rgba(0, 0, 0, .125)
 }
 
