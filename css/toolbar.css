@@ -4,7 +4,7 @@
 #toolbar > * {
   position: fixed;
   z-index: 99;
-  right: 30px;
+  right: 1rem;
   margin: auto;
   top: calc(50% - 81px);
   box-sizing: border-box;
