@@ -54,4 +54,9 @@
   -webkit-appearance: none;
   margin: 0;
 }
+
+.btn-feedback:hover{
+  color: #F4E04D;
+  border: #E9EAEE solid 1px;
+}
 </b: tag>;
