@@ -166,7 +166,7 @@
 
         <section class="vh-100 form-signin">
             <div class="container-fluid login">
-                <form>
+                <form id="form" class="form error" action="../html/index.html" method="POST" onsubmit="return validate() ">
                     <div>
                         <h1>Sign in</h1>
                     </div>
@@ -174,40 +174,83 @@
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="email" style="float:left"><b>Email</b></label>
-                        <input id="email" type="text" class="form-control w-100"
-                               placeholder="Enter Email" name="email" />
-                        <span class="form-message"></span>
+                        <input id="email" type="text" class="form-control w-100" placeholder="Enter Email" name="email"/>
+                        <small class="message-error" id="email-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="email" style="float:left"><b>Username</b></label>
-                        <input id="username" type="text" class="form-control w-100"
-                               placeholder="Enter Username" name="username" />
-                        <span class="form-message"></span>
+                        <input id="username" type="text" class="form-control w-100" placeholder="Enter Username" name="username"/>
+                        <small class="message-error" id="name-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="password"><b>Password</b></label>
-                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
-                               name="password" />
-                        <span class="form-message"></span>
+                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password" name="password"
+                               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
+                        <small class="message-error" id="psw-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="confirm_password"><b>Password</b></label>
-                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password"
-                               name="password" />
-                        <span class="form-message"></span>
+                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"
+                               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                               title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."/>
+                        <small class="message-error" id="re-psw-error"></small>
                     </div>
 
                     <div class="div-login form-group">
-                        <input type="submit" value="Sign in" class="btn login_btn" formaction="../html/index.html" />
+                        <input type="submit" value="Sign in" class="btn login_btn"/>
                     </div>
                 </form>
             </div>
         </section>
         <!-- main -->
     </main>
+
+    <script>
+        function validate(){
+            const username = document.getElementById("username").value;
+            const psw = document.getElementById("password").value;
+            const re_psw = document.getElementById("confirm_password").value;
+            const email = document.getElementById("email").value;
+
+            if (username === ""){
+                document.getElementById("name-error").innerHTML="Vui long nhap ten";
+                return false;
+            }
+
+            if (username.length < 3 || username.length > 10){
+                document.getElementById("psw-error").innerHTML="Username co do dai tu 3 den 10";
+                return false;
+            }
+
+            if (psw === ""){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
+                return false;
+            }
+
+            if (re_psw === ""){
+                document.getElementById("re-psw-error").innerHTML="Vui long nhap lai mat khau";
+                return false;
+            }
+
+            if (email === ""){
+                document.getElementById("psw-error").innerHTML="Vui long nhap email";
+                return false;
+            }
+
+            if (psw.value === re_psw.value){
+                document.getElementById("re-psw-error").innerHTML="Mat khau khong trung khop";
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+    </script>
 
     <footer class="footer-distributed">
         <div class="footer-left">
