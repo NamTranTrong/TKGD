@@ -192,17 +192,36 @@
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="confirm_password"><b>Confirm Password</b></label>
-                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"
-                              />
+                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"/>
                         <small class="message-error" id="re-psw-error"></small>
                     </div>
 
                     <div class="div-login form-group">
-                        <input type="submit" value="Sign in" class="btn login_btn"/>
+                        <input type="submit" value="Sign in" class="btn login_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
                     </div>
                 </form>
             </div>
         </section>
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">2hand Shop</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ban da dang ki tai khoan thanh cong</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main -->
     </main>
 

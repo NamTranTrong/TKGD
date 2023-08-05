@@ -6069,9 +6069,11 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #000000;
+    background: #f6de2d;
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px)
+
 }
 
 .modal-header .btn-close {
@@ -6081,7 +6083,7 @@ fieldset:disabled .btn {
 
 .modal-title {
     margin-bottom: 0;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 .modal-body {
