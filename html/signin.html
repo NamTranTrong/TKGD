@@ -186,16 +186,14 @@
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="password"><b>Password</b></label>
-                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password" name="password"
-                               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
+                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password" name="password"/>
                         <small class="message-error" id="psw-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="confirm_password"><b>Password</b></label>
+                        <label class="h6" for="confirm_password"><b>Confirm Password</b></label>
                         <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"
-                               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                               title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."/>
+                              />
                         <small class="message-error" id="re-psw-error"></small>
                     </div>
 
@@ -214,42 +212,63 @@
             const psw = document.getElementById("password").value;
             const re_psw = document.getElementById("confirm_password").value;
             const email = document.getElementById("email").value;
+            const pattern = /@./;
+            const check_email = pattern.test(email);
+            const pattern_psw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+            const check_psw = pattern_psw.test(psw.value);
 
             if (username === ""){
                 document.getElementById("name-error").innerHTML="Vui long nhap ten";
+                document.getElementById("username").style.border = "2px solid red";
                 return false;
             }
 
             if (username.length < 3 || username.length > 10){
                 document.getElementById("psw-error").innerHTML="Username co do dai tu 3 den 10";
+                document.getElementById("username").style.border = "2px solid red";
                 return false;
             }
 
             if (psw === ""){
                 document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
+                document.getElementById("password").style.border = "2px solid red";
+                return false;
+            }
+
+            if (!pattern_psw.test(psw.value)){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau dung dinh dang\nGồm: ít nhất 1 ký tự viết hoa, 1 ký tự viết thường, 1 số va toi thieu 8 ky tu.";
+                document.getElementById("password").style.border = "2px solid red";
+                document.getElementById("psw-error").style.fontSize = "12px"
                 return false;
             }
 
             if (re_psw === ""){
                 document.getElementById("re-psw-error").innerHTML="Vui long nhap lai mat khau";
+                document.getElementById("confirm_password").style.border = "2px solid red";
                 return false;
             }
 
             if (email === ""){
                 document.getElementById("psw-error").innerHTML="Vui long nhap email";
+                document.getElementById("email").style.border = "2px solid red";
+                return false;
+            }
+
+            if (check_email == false)
+            {
+                document.getElementById("psw-error").innerHTML = 'Please fill out a valid email format';
+                document.getElementById("email").style.border = "2px solid red";
                 return false;
             }
 
             if (psw.value === re_psw.value){
                 document.getElementById("re-psw-error").innerHTML="Mat khau khong trung khop";
+                document.getElementById("confirm_password").style.border = "2px solid red";
                 return false;
             }
 
             return true;
         }
-
-
-
     </script>
 
     <footer class="footer-distributed">
