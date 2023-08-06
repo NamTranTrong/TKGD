@@ -1,14 +1,13 @@
 .about-product {
-    height: 80vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
 }
 
 .about-product-left {
-    height: 100%;
+    height: 70%;
     position: relative;
+
 }
 
 .about-product-right {
@@ -200,4 +199,69 @@
     margin-top: 30px;
     width: 80%;
 }
+
+.detail-description{
+    margin-top : 30px;
+    width: 100%;
+}
+
+.menu-description{
+    font-family: cursive;
+}
+
+.detail-description ul{
+    padding-left: 0;
+    display: flex;
+}
+
+.detail-description li{
+    list-style:  none;
+    padding-right : 35px;
+    cursor: pointer;
+}
+.detail-description li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.text-description{
+    margin-top: 20px;
+}
+  
+  
+.hidden {
+    display: none;
+}
+
+.text-description p{
+    color: #999;
+}
+
+.text-description-2{
+    position: relative;
+    width: 100%;
+}
+
+.div-corner-img{
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+}
+
+.corner-image {
+  width: 100px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
+  height: 100px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
+}
+
+.text-description-2 p{
+    margin: 0;
+}
+
+
+
+
+
 
