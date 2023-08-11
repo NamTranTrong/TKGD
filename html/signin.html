@@ -166,7 +166,7 @@
 
         <section class="vh-100 form-signin">
             <div class="container-fluid login">
-                <form id="form" class="form error" action="../html/index.html" method="POST" onsubmit="return validate() ">
+                <form id="form" class="form error" action="../html/index_acc.html" method="POST" onsubmit="return validate() ">
                     <div>
                         <h1>Sign in</h1>
                     </div>
@@ -214,9 +214,8 @@
                         <div class="modal-body">
                             <p>Ban da dang ki tai khoan thanh cong</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="modal-footer align-self-center">
+                            <button id ="okBtn" type="button" class="btn btn-primary">OK</button>
                         </div>
                     </div>
                 </div>
@@ -226,6 +225,10 @@
     </main>
 
     <script>
+        document.getElementById("okBtn").addEventListener("click", function(){
+            window.location.href = "../html/index_acc.html";
+        });
+
         function validate(){
             const username = document.getElementById("username").value;
             const psw = document.getElementById("password").value;
@@ -233,7 +236,6 @@
             const email = document.getElementById("email").value;
             const pattern = /@./;
             const check_email = pattern.test(email);
-            const pattern_psw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
             const check_psw = pattern_psw.test(psw.value);
 
             if (username === ""){
@@ -254,8 +256,8 @@
                 return false;
             }
 
-            if (!pattern_psw.test(psw.value)){
-                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau dung dinh dang\nGồm: ít nhất 1 ký tự viết hoa, 1 ký tự viết thường, 1 số va toi thieu 8 ky tu.";
+            if (psw.length < 8){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau co toi thieu 8 ky tu.";
                 document.getElementById("password").style.border = "2px solid red";
                 document.getElementById("psw-error").style.fontSize = "12px"
                 return false;

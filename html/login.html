@@ -166,7 +166,7 @@
 
         <section class="vh-100 form-login">
             <div class="div-login container-fluid login">
-                <form id="form" class="form error" action="../html/index.html" method="POST" onsubmit="return validate() ">
+                <form id="form" class="form error" method="POST" onsubmit="return validate() ">
                     <div>
                         <h1>Log in</h1>
                     </div>
@@ -191,7 +191,7 @@
                     </label>
 
                     <div class="div-login form-group">
-                        <input type="submit" value="Log in" class="btn login_btn" formaction="../html/index.html" />
+                        <input type="submit" value="Log in" class="btn login_btn" formaction="index_acc.html" />
                     </div>
 
                     <a href="">Quên tài khoản?</a><br>
@@ -214,7 +214,7 @@
             }
 
             if (username.length < 3 || username.length > 10){
-                document.getElementById("psw-error").innerHTML="Username co do dai tu 3 den 10";
+                document.getElementById("name-error").innerHTML="Username co do dai tu 3 den 10";
                 return false;
             }
 
