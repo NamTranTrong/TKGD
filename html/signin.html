@@ -166,42 +166,131 @@
 
         <section class="vh-100 form-signin">
             <div class="container-fluid login">
-                <form>
+                <form id="form" class="form error" action="../html/index_acc.html" method="POST" onsubmit="return validate() ">
                     <div>
                         <h1>Sign in</h1>
                     </div>
-                    <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+                    <p>Bạn đã có tài khoản? <a href="../html/login.html">Đăng nhập</a></p>
 
-                    <div class="input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="username" style="float:left"><b>Username or Email</b></label>
-                        <input id="username" type="text" class="form-control w-100"
-                            placeholder="Enter Username or Email" name="username" />
-                        <span class="form-message"></span>
+                    <div class="div-login input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="email" style="float:left"><b>Email</b></label>
+                        <input id="email" type="text" class="form-control w-100" placeholder="Enter Email" name="email"/>
+                        <small class="message-error" id="email-error"></small>
                     </div>
 
-                    <div class="input-group form-group" style="flex-direction: column;">
+                    <div class="div-login input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="email" style="float:left"><b>Username</b></label>
+                        <input id="username" type="text" class="form-control w-100" placeholder="Enter Username" name="username"/>
+                        <small class="message-error" id="name-error"></small>
+                    </div>
+
+                    <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="password"><b>Password</b></label>
-                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
-                            name="password" />
-                        <span class="form-message"></span>
+                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password" name="password"/>
+                        <small class="message-error" id="psw-error"></small>
                     </div>
 
-                    <div class="input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="confirm-password"><b>Confirm Password</b></label>
-                        <input id="confirm-password" type="password" class="form-control w-100"
-                            placeholder="Enter Confirm Password" name="confirm-password" />
-                        <span class="form-message"></span>
+                    <div class="div-login input-group form-group" style="flex-direction: column;">
+                        <label class="h6" for="confirm_password"><b>Confirm Password</b></label>
+                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"/>
+                        <small class="message-error" id="re-psw-error"></small>
                     </div>
 
-                    <div class="form-group">
-                        <input type="submit" value="Sign in" class="btn login_btn" formaction="" />
+                    <div class="div-login form-group">
+                        <input type="submit" value="Sign in" class="btn login_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
                     </div>
                 </form>
             </div>
         </section>
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">2hand Shop</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ban da dang ki tai khoan thanh cong</p>
+                        </div>
+                        <div class="modal-footer align-self-center">
+                            <button id ="okBtn" type="button" class="btn btn-primary">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main -->
     </main>
 
+    <script>
+        document.getElementById("okBtn").addEventListener("click", function(){
+            window.location.href = "../html/index_acc.html";
+        });
+
+        function validate(){
+            const username = document.getElementById("username").value;
+            const psw = document.getElementById("password").value;
+            const re_psw = document.getElementById("confirm_password").value;
+            const email = document.getElementById("email").value;
+            const pattern = /@./;
+            const check_email = pattern.test(email);
+            const check_psw = pattern_psw.test(psw.value);
+
+            if (username === ""){
+                document.getElementById("name-error").innerHTML="Vui long nhap ten";
+                document.getElementById("username").style.border = "2px solid red";
+                return false;
+            }
+
+            if (username.length < 3 || username.length > 10){
+                document.getElementById("psw-error").innerHTML="Username co do dai tu 3 den 10";
+                document.getElementById("username").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw === ""){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
+                document.getElementById("password").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw.length < 8){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau co toi thieu 8 ky tu.";
+                document.getElementById("password").style.border = "2px solid red";
+                document.getElementById("psw-error").style.fontSize = "12px"
+                return false;
+            }
+
+            if (re_psw === ""){
+                document.getElementById("re-psw-error").innerHTML="Vui long nhap lai mat khau";
+                document.getElementById("confirm_password").style.border = "2px solid red";
+                return false;
+            }
+
+            if (email === ""){
+                document.getElementById("psw-error").innerHTML="Vui long nhap email";
+                document.getElementById("email").style.border = "2px solid red";
+                return false;
+            }
+
+            if (check_email == false)
+            {
+                document.getElementById("psw-error").innerHTML = 'Please fill out a valid email format';
+                document.getElementById("email").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw.value === re_psw.value){
+                document.getElementById("re-psw-error").innerHTML="Mat khau khong trung khop";
+                document.getElementById("confirm_password").style.border = "2px solid red";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 
     <footer class="footer-distributed">
         <div class="footer-left">

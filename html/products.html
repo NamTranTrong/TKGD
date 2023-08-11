@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/products.css" />
     <link rel="stylesheet" href="../css/scrollup.css" />
     <link rel="stylesheet" href="../css/toolbar.css" />
+    <link rel="stylesheet" href="../css/budget-slider.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +45,9 @@
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="products.html">PRODUCTS</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Another link</a></li>
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
@@ -143,21 +146,25 @@
         </nav>
     </header>
 
-    <div class="dummy-element"></div>
+    <!-- <div class="dummy-element"></div> -->
 
-
+    <!-- search -->
     <section class="container head-search">
         <div class="col-4 col pr-2 justify-content-between">
             <nav style="
-          --bs-breadcrumb-divider: url(
-            &#34;data:image/svg + xml,
-            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
-          );
-        " aria-label="breadcrumb">
+            --bs-breadcrumb-divider: url(
+              &#34;data:image/svg + xml,
+              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+            );
+          " aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <div style="background-color: #f6de2d;padding:2px 10px;border-radius: 25%;">
-                            <a style="text-decoration: none; color:#000;" href="#">Trang chủ</a>
+                        <div style="
+                  background-color: #f6de2d;
+                  padding: 2px 10px;
+                  border-radius: 25%;
+                ">
+                            <a style="text-decoration: none; color: #000" href="#">Trang chủ</a>
                         </div>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
@@ -177,11 +184,8 @@
     </section>
 
 
-    <!-- wrapper -->
-    <div class="container wrapper content">
-        <!-- search -->
-
-
+    <!-- main side -->
+    <div class="container side">
         <!-- sidebar -->
         <aside>
             <!-- all collections -->
@@ -210,7 +214,7 @@
                                     </div>
                                     <div class="p-0 m-0 d-flex justify-content-end">
                                         <input class="form-check-input float-end" type="checkbox" value=""
-                                            id="flexCheckDefault1">
+                                            id="flexCheckDefault1" />
                                     </div>
                                 </div>
 
@@ -221,12 +225,11 @@
                                     </div>
                                     <div class="p-0 m-0 d-flex justify-content-end">
                                         <input class="form-check-input float-end" type="checkbox" value=""
-                                            id="flexCheckDefault2">
+                                            id="flexCheckDefault2" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -248,8 +251,11 @@
                 </button>
                 <div class="collapse" id="collapseExample2">
                     <div class="card card-body resetbtn">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
+                        <!-- Budget Slider -->
+                        <div class="slider-container">
+                            <input type="range" min="0" max="100" value="40" class="slider" id="budgetSlider" />
+                            <label for="budgetSlider">$<span id="budgetValue">40</span></label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,8 +277,97 @@
                 </button>
                 <div class="collapse" id="collapseExample3">
                     <div class="card card-body resetbtn">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
+                        <div class="form-check p-1 d-flex justify-content-between">
+                            <div class="d-flex flex-column w-100">
+                                <!-- 1 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">BRADDOCK</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault1" />
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">CALGARY</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">CHRONO</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">CUSHION</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">HMS</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">HMS DAT</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">MONA W</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="d-flex flex-row">
+                                    <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                        <label class="form-check-label" for="flexCheckDefault">PRIMA</label>
+                                    </div>
+                                    <div class="p-0 m-0 d-flex justify-content-end">
+                                        <input class="form-check-input float-end" type="checkbox" value=""
+                                            id="flexCheckDefault2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -293,16 +388,101 @@
                     </div>
                 </button>
                 <div class="collapse" id="collapseExample4">
-                    <div class="card card-body resetbtn">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
+                    <div class="d-flex flex-column w-100">
+                        <!-- 1 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">BEIGE</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault1" />
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">BLANC</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">BLEU</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">GRIS</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">IVOIRE</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">LAITON</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">MARRON</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="d-flex flex-row">
+                            <div class="w-100 p-0 m-0 d-flex justify-content-start">
+                                <label class="form-check-label" for="flexCheckDefault">NIOR</label>
+                            </div>
+                            <div class="p-0 m-0 d-flex justify-content-end">
+                                <input class="form-check-input float-end" type="checkbox" value=""
+                                    id="flexCheckDefault2" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </aside>
 
         <!-- main -->
-        <main>
+        <main style="height: 100%;">
             <!-- heading -->
             <section id="section1">
                 <div class="m-auto w-100 align-items-center text-center">
@@ -620,6 +800,365 @@
                     </div>
                 </div>
             </section>
+
+            <!-- carousel -->
+            <section id="section3">
+                <div class="dummy-element"></div>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide m-auto" data-interval="false">
+                    <div class="carousel-indicators mb-0" style="bottom: -1rem;">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row mb-5 align-items-start">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-center">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-end">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row mb-5 align-items-start">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-center">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-end">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row mb-5 align-items-start">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-center">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5 align-items-end">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                                class="card-img-top" alt="dongho">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">price $</p>
+                                                <a href="./product-detail.html" class="btn btn-primary">Detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -673,10 +1212,13 @@
     </script>
 
     <!-- footer -->
-    <footer class="footer-distributed position-relative bottom-0">
+    <div style="height: 1000px;"></div>
+    <footer id="footer" class="footer-distributed">
         <div class="footer-left">
-            <h3>Company<span><img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo"
-                        style="height: 4rem;"></span></h3>
+            <h3>
+                Company<span><img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo"
+                        style="height: 4rem" /></span>
+            </h3>
             <p class="footer-links">
                 <a href="#" class="link-1">Home</a>
                 <a href="#">Blog</a>
@@ -704,8 +1246,8 @@
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
-                lacus vehicula sit amet.
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+                euismod convallis velit, eu auctor lacus vehicula sit amet.
             </p>
             <div class="footer-icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -715,6 +1257,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- script -->
+    <script src="../js/budget-slider.js"></script>
 </body>
 
 </html>

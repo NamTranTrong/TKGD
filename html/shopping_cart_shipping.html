@@ -170,15 +170,15 @@
 
     <section>
         <div class="section1">
-            <img src="../images/grocery.jpg" width="100%" height="10%">
+            <img src="../images/grocery.jpg" width="100%" height="200px">
             <div class="centered">
-                Shopping Cart<br>
-                Home- Shoping Cart
+                <p style="text-align: center; font-size: 30px">Shopping Cart</p>
+                <p style="text-align: center">Home- Shoping Cart
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="main-content">
         <div class="card text-center col align-self-center">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
@@ -200,113 +200,82 @@
                 </ul>
             </div>
             <div class="container">
-                <div class="row" style="font-size: 18px">
+                <div class="row card-title" style="font-size: 18px">
                     <div class="col-1"></div>
                     <div class="col-4" style="text-align: left"><b>Product</b></div>
-                    <div class="col-2"><b>Price</b></div>
-                    <div class="col-2"><b>Quantity</b></div>
                     <div class="col-2"><b>Total</b></div>
+                    <div class="col-2"><b>Status</b></div>
+                    <div class="col-2"><b>Shop</b></div>
                     <div class="col-1"></div>
                 </div>
 
-                <div class="row">
-                    <div class="col-1">
-                        <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
-                    <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-2 align-self-center">
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
-                            <input class="plus is-form" type="button" value="+">
+                <div class="items">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
+                        <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
+                        <div class="col-2 align-self-center">100.000VND</div>
+                        <div class="col-2 align-self-center">
+                            Đơn hàng đang được vận chuyển
                         </div>
-                    </div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-1 align-self-center" style="text-align: left">
-                        <button type="button" class="btn">
-                            <i class="fa-solid fa-x"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-1">
-                        <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
-                    <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-2 align-self-center">
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-1 align-self-center" style="text-align: left">
-                        <button type="button" class="btn">
-                            <i class="fa-solid fa-x"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-1">
-                        <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
-                    <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-2 align-self-center">
-                        <div class="buttons_added">
-                            <input class="minus is-form" type="button" value="-">
-                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
-                            <input class="plus is-form" type="button" value="+">
-                        </div>
-                    </div>
-                    <div class="col-2 align-self-center"><b>100.000VND</b></div>
-                    <div class="col-1 align-self-center" style="text-align: left">
-                        <button type="button" class="btn">
-                            <i class="fa-solid fa-x"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-top: 40px">
-                    <div class="col-6 d-flex flex-row">
-                        <button type="button" class="btn btn-secondary">CONTINUE SHOPPING</button>
-                    </div>
-                    <div class="col-6 d-flex flex-row-reverse">
-                        <button type="button" class="btn btn-secondary">
-                            <i class="fa fa-rotate-right"></i>
-                            UPDATE CART</button>
-                    </div>
-                </div>
-
-                <div class="row" style="margin: 40px 0px 40px 0px">
-                    <div class="col-8">
-                        <label class="d-flex flex-row" style="font-size: 20px"><b>DISCOUNT CODES</b></label>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="Username" width="50px">
-                            </div>
-                            <div class="col-6 d-flex flex-row">
-                                <button type="button" class="btn btn-secondary">APPLY COUPON</button>
-                            </div>
+                        <div class="col-2 align-self-center">Nguyễn Văn A</div>
+                        <div class="col-1 align-self-center" style="text-align: left">
+                            <button type="button" class="btn">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="col-4" style="background: #ddd; padding: 10px">
-                        <b class="d-flex flex-row" style="font-size: 20px">Cart Total</b>
-                        <div class="row">
-                            <div class="col-6 d-flex flex-row"><b>Subtotal</b></div>
-                            <div class="col-6 d-flex flex-row-reverse" style="color: red">300.000VND</div>
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
+                        <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
+                        <div class="col-2 align-self-center">100.000VND</div>
+                        <div class="col-2 align-self-center">
+                            Đơn hàng đang được vận chuyển
                         </div>
-                        <div class="row">
-                            <div class="col-6 d-flex flex-row"><b>Total</b></div>
-                            <div class="col-6 d-flex flex-row-reverse" style="color: red">300.000VND</div>
-                        </div>
-                        <div class="row" style="margin: 0px 10px">
-                            <button type="button" class="btn btn-success" >PROCEED TO CHECKOUT</button>
+                        <div class="col-2 align-self-center">Nguyễn Văn A</div>
+                        <div class="col-1 align-self-center" style="text-align: left">
+                            <button type="button" class="btn">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="..."></div>
+                        <div class="col-4 align-self-center" style="text-align: left">Áo balenciaga</div>
+                        <div class="col-2 align-self-center">100.000VND</div>
+                        <div class="col-2 align-self-center">
+                            Đơn hàng đang được vận chuyển
+                        </div>
+                        <div class="col-2 align-self-center">Nguyễn Văn A</div>
+                        <div class="col-1 align-self-center" style="text-align: left">
+                            <button type="button" class="btn">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--                    Pagination-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center" style="padding: 10px">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

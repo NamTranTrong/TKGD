@@ -166,7 +166,7 @@
 
         <section class="vh-100 form-login">
             <div class="div-login container-fluid login">
-                <form>
+                <form id="form" class="form error" method="POST" onsubmit="return validate() ">
                     <div>
                         <h1>Log in</h1>
                     </div>
@@ -176,22 +176,22 @@
                         <label class="h6" for="username" style="float:left"><b>Username or Email</b></label>
                         <input id="username" type="text" class="form-control w-100"
                             placeholder="Enter Username or Email" name="username" />
-                        <span class="form-message"></span>
+                        <small class="message-error" id="name-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="password"><b>Password</b></label>
                         <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
                             name="password" />
-                        <span class="form-message"></span>
+                        <small class="message-error" id="psw-error"></small>
                     </div>
 
                     <label>
-                        <input type="checkbox" checked="checked" name="remember"> Keep me logged in
+                        <input type="checkbox" checked="checked" name="remember">Remember me
                     </label>
 
                     <div class="div-login form-group">
-                        <input type="submit" value="Log in" class="btn login_btn" formaction="" />
+                        <input type="submit" value="Log in" class="btn login_btn" formaction="index_acc.html" />
                     </div>
 
                     <a href="">Quên tài khoản?</a><br>
@@ -202,6 +202,29 @@
         </section>
         <!-- main -->
     </main>
+
+    <script>
+        function validate(){
+            const username = document.getElementById("username").value;
+            const psw = document.getElementById("password").value;
+
+            if (username === ""){
+                document.getElementById("name-error").innerHTML="Vui long nhap ten";
+                return false;
+            }
+
+            if (username.length < 3 || username.length > 10){
+                document.getElementById("name-error").innerHTML="Username co do dai tu 3 den 10";
+                return false;
+            }
+
+            if (psw === ""){
+                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
+                return false;
+            }
+            return true;
+        }
+    </script>
 
     <footer class="footer-distributed">
         <div class="footer-left">

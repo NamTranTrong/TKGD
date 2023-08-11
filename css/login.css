@@ -1,10 +1,14 @@
+:root{
+  --success-color: green;
+  --error-color: #e74c3c;
+}
+
 .login {
   padding: 25px;
   border: #e9eaee 1px solid;
   display: flex;
   justify-content: center;
   width: 25%;
-  height: 75%;
   align-items: center;
   font-size: 20px;
   box-shadow: 1px 2px 5px #999999;
@@ -19,8 +23,17 @@ a {
 
 .login_btn {
   background: #f6de2d;
-  width: 100px;
   border-radius: 20px;
   color: white;
   font-size: large;
 }
+
+.form input {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.form.error small{
+  color: var(--error-color);
+}
+

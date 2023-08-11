@@ -19,60 +19,40 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-white navbar-light">
             <div class="container-fluid">
-                <div class="col-sm-5 col ">
+                <div class="col-sm-5 col">
                     <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Shop</a>
+                                    data-bs-toggle="dropdown">
+                                    Shop
+                                </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                                    <li><a class="dropdown-item" href="post.html">POST</a></li>
+                                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    <li><a class="dropdown-item" href="#">A third link</a></li>
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Danh Mục</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="post.html" role="button">Đăng tin</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Đăng tin</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="#" role="button">Blog/ Review</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Blog/ Review</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Contact</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="#" role="button">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-2 col">
-                    <a href="">
-                        <img class="logo" src="../images/logo-shop.png" alt="">
+                    <a href="index.html">
+                        <img class="logo" src="../images/logo-shop.png" alt="" />
                     </a>
                 </div>
                 <div class="col-sm-5 col">
@@ -103,20 +83,27 @@
                                     <i class="fa-solid fa-globe fa-xl"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                    <li><a class="dropdown-item" href="#">English</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button">
-                                    <button type="button" class="elementor-button">Đăng Nhập</button>
+                            <li class="nav-item custom-link dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-user"></i>
                                 </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href=""><i class="fa-solid fa-info"></i> Profile</a></li>
+                                    <li><a class="dropdown-item" href="shopping_cart_wait_confirm.html"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question"></i> FQA</a></li>
+                                    <li><a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -124,25 +111,25 @@
     <main>
         <!-- search-box area -->
         <section class="container head-search">
-                <div class="col-4 col pr-2 justify-content-between">
-                    <nav style="
+            <div class="col-4 col pr-2 justify-content-between">
+                <nav style="
                   --bs-breadcrumb-divider: url(
                     &#34;data:image/svg + xml,
                     %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
                   );
                 " aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <div style="background-color: #f6de2d;padding:2px 10px;border-radius: 25%;">
-                                    <a style="text-decoration: none; color:#000;" href="#">Trang chủ</a>
-                                </div>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                Danh sách sản phẩm
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <div style="background-color: #f6de2d;padding:2px 10px;border-radius: 25%;">
+                                <a style="text-decoration: none; color:#000;" href="#">Trang chủ</a>
+                            </div>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Danh sách sản phẩm
+                        </li>
+                    </ol>
+                </nav>
+            </div>
             <div class="container h-100">
                 <div class="d-flex justify-content-end h-100">
                     <div class="searchbar">
@@ -207,24 +194,35 @@
 
     <section class="section-form-post container">
         <div class="col-5 form-post-left">
-            <div class="text-add-img">
-                <h5 class="text-post-1"> Thêm hình ảnh, video <i class="fa-solid fa-star-of-life"
+            <div class="text-tags">
+                <h5 class="text-post-1"> Tên sản phẩm <i class="fa-solid fa-star-of-life"
                         style="color: #e64528;"></i></h5>
-                <p class="text-policy">Xem chính sách đăng ảnh, video của 3R</p>
-            </div>
-            <div class="text-content">
-                <h5 class="text-post-1"> Tiêu đề tin đăng và Mô tả chi tiết <i class="fa-solid fa-star-of-life"
-                        style="color: #e64528;"></i></h5>
+                <input placeholder="Nhập tên của sản phẩm được bán" type="text"class="form-control">
                 <br>
-                <textarea placeholder=" Nói gì đó về sản phẩm để thu hút nhiều người mua hơn nhé !" name="" id=""
-                    cols="70" rows="6"></textarea>
             </div>
-            <div class="text-location">
-                <h5 class="text-post-1"> Địa chỉ <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i></h5>
-                <br>
-                <input placeholder="Số nhà, đường, phường, xã, quận, huyện, thành phố,..." type="text"
-                    class="form-control">
+            <div>
+                <div class="text-add-img">
+                    <h5 class="text-post-1"> Thêm hình ảnh, video <i class="fa-solid fa-star-of-life"
+                            style="color: #e64528;"></i></h5>
+                    <p class="text-policy">Xem chính sách đăng ảnh, video của 3R</p>
+                </div>
+    
+                <div class="text-content">
+                    <h5 class="text-post-1"> Tiêu đề tin đăng và Mô tả chi tiết <i class="fa-solid fa-star-of-life"
+                            style="color: #e64528;"></i></h5>
+                    <textarea placeholder=" Nói gì đó về sản phẩm để thu hút nhiều người mua hơn nhé !" name="" id=""
+                        cols="70" rows="6"></textarea>
+                        <br>
+                </div>
+                <div class="text-location">
+                    <h5 class="text-post-1"> Địa chỉ <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i></h5>
+                    <input placeholder="Số nhà, đường, phường, xã, quận, huyện, thành phố,..." type="text"
+                        class="form-control">
+                        <br>
+                </div>
+                <button type="button" class="btn btn-warning" style="width: 100%" data-bs-toggle="modal" data-bs-target="#success_modal"><b>ĐĂNG BÁN</b></button>
             </div>
+            
         </div>
 
         <div class="col-5 form-post-right">
@@ -235,18 +233,28 @@
             <div class="text-status">
                 <h5 class="text-post-1"> Loại người dùng <i class="fa-solid fa-star-of-life"
                         style="color: #e64528;"></i></h5>
-                <br>
                 <select class="form-control">
                     <option value="">Nam</option>
                     <option value="">Nữ</option>
                     <option value="">Cả Nam và Nữ</option>
-
                 </select>
+                <br>
             </div>
+
+            <div class="text-tags">
+                <h5 class="text-post-1"> Loại sản phẩm <i class="fa-solid fa-star-of-life"style="color: #e64528;"></i></h5>
+                <select class="form-control">
+                    <option value="fashion">Thời trang</option>
+                    <option value="household_items">Vật dụng gia đình</option>
+                    <option value="electronic">Thiết bị điện tử</option>
+                    <option value="decorative_items">Vật dụng trang trí</option>
+                </select>
+                <br>
+            </div>
+
             <div class="text-tags">
                 <h5 class="text-post-1"> Tình trạng sử dụng <i class="fa-solid fa-star-of-life"
                         style="color: #e64528;"></i></h5>
-                <br>
                 <div class="list-tags">
                     <button type="button" class="btn btn-warning">Cũ</button>
                     <button type="button" class="btn btn-outline-secondary">Mới</button>
@@ -254,15 +262,62 @@
                     <button type="button" class="btn btn btn-outline-secondary">Hỏng nhẹ</button>
                 </div>
             </div>
+            <div class="text-tags">
+                <br>
+                <h5 class="text-post-1"> Giá tiền sản phẩm <i class="fa-solid fa-star-of-life"
+                        style="color: #e64528;"></i></h5>
+                <input placeholder="Giá tiền sản phẩm được bán" type="text"class="form-control">
+                <br>
+            </div>
         </div>
         <div class="post-img">
             <img class="img-camera" src="../images/đồ-pass-1.jpg" alt="">
-            <img class="img-camera" src="../images/đồ-pass-2.jpg"" alt="">
-                    <img class=" img-camera" src="../images/photo-camera.png" alt="">
+            <img class="img-camera" src="../images/đồ-pass-2.jpg" alt="">
+            <img class=" img-camera" src="../images/photo-camera.png" alt="">
             <img class="img-camera" src="../images/photo-máy-quay-1.png" alt="">
             <img class="img-camera" src="../images/photo-máy-quay-1.png" alt="">
         </div>
     </section>
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="success_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">2hand Shop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="../images/tick-green.jpg" style="width: 15%;">
+                        <p>Ban da dang ki tai khoan thanh cong</p>
+                    </div>
+                    <div class="modal-footer align-self-center" style="align-items: center;">
+                        <button id="okButton" type="button" class="btn btn-primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="error_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">2hand Shop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <img src="../images/tick-red.png" style="width: 15%;">
+                        <p>Ban da dang ki tai khoan thanh cong</p>
+                    </div>
+                    <div class="modal-footer align-self-center">
+                        <button type="button" class="btn btn-primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -325,6 +380,12 @@
         </div>
 
     </footer>
+
+    <script>
+        document.getElementById("okButton").addEventListener("click", function(){
+            window.location.href = "../html/product-detail.html";
+        });
+    </script>
 </body>
 
 </html>
