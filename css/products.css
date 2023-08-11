@@ -2,9 +2,6 @@
   height: 1024px;
 }
 
-.wrapper {
-  height: 100vh;
-}
 
 .resetbtn,
 .resetbtn:hover,
@@ -24,8 +21,12 @@
 }
 
 /* CSS */
+.side {
+  height: 100vh;
+}
+
 @media (min-width: 800px) {
-  .wrapper {
+  .side {
     display: grid;
     grid-template-columns: 20% 1fr;
     grid-gap: 1rem;
@@ -72,4 +73,33 @@
 
 .check-box-child {
   padding: 0;
+}
+
+.dummy-element-footer {
+  height: calc(1000px);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+body {
+  flex-grow: 1;
 }

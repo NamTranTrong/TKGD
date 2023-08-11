@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/scrollup.css" />
     <link rel="stylesheet" href="../css/toolbar.css" />
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/blog.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -140,6 +141,7 @@
     <!-- main -->
     <div class="dummy-element"></div>
     <main>
+        <!-- search section -->
         <section class="container head-search">
             <div class="col-4 col pr-2 justify-content-between">
                 <nav style="
@@ -171,143 +173,148 @@
             </div>
         </section>
 
-        <section class="section-1">
-            <div class="row align-items-start justify-content-center">
-                <div class="col-5" style="text-align: right">
-                    <b>
-                        <p style="font-size: 30px">
-                            Mỗi món đồ thời trang<br />đều xứng đáng có cơ hội <br />yêu
-                            thương và nâng niu thứ hai
-                        </p>
-                    </b>
-                    <p style="font-size: 18px">
-                        3R là một nền tảng đặc biệt dành riêng cho những món đồ đã qua sử
-                        dụng, <br />một nơi mà bạn vừa có thể "tân trang" tủ quần áo, thỏa
-                        sức sáng tạo các phong <br />cách thời trang, vừa chung tay giảm
-                        thiểu rác thải ra môi trường. <br /><b>revive, reuse and relove</b>
-                    </p>
-                    <button class="btn btn-primary" type="button"
-                        style="background-color: #f6de2d; border: #f6de2d; color: black">
-                        <a href="../html/products.html" role="button"></a><b>Go shopping!</b>
-                    </button>
-                </div>
-
-                <div class="col-5" style="text-align: center">
-                    <img src="../images/thingInHomePage.png" alt="" style="width: 60%" />
+        <!-- Page header with logo and tagline-->
+        <div class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="section-2" style="margin-top: 30px">
+        <!-- Page content-->
+        <div class="container">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-4" style="margin-left: 2cm">
-                    <img src="../images/peopleInHomePage.png" alt="" />
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg"
+                                alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2023</div>
+                            <h2 class="card-title">Featured Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
+                                animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top"
+                                        src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2023</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top"
+                                        src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2023</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top"
+                                        src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2023</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top"
+                                        src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2023</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                    <nav aria-label="Pagination">
+                        <hr class="my-0" />
+                        <ul class="pagination justify-content-center my-4">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
+                                    aria-disabled="true">Newer</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-5" style="text-align: center; margin: auto; font-size: 25px">
-                    <b>
-                        <p>
-                            Thật tuyệt vời khi sở hữu những outfit trendy, xịn <br />xò,
-                            sang chảnh và sau đó lại vượt qua giới hạn <br />của bản thân,
-                            biến những item <br />ngay trong tủ quần áo của bạn trở thành
-                            những <br />sản phẩm kinh doanh độc đáo.
-                        </p>
-                    </b>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..."
+                                    aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Categories</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">Web Design</a></li>
+                                        <li><a href="#!">HTML</a></li>
+                                        <li><a href="#!">Freebies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">JavaScript</a></li>
+                                        <li><a href="#!">CSS</a></li>
+                                        <li><a href="#!">Tutorials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy
+                            to use, and feature the Bootstrap 5 card component!</div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-3" style="text-align: center; margin: 50px">
-            <div class="col align-self-center">
-                <b>
-                    <p style="
-                color: white;
-                font-size: 35px;
-                background-size: cover;
-                background-color: #f6de2d;
-              ">
-                        Đứng đầu thị trường
-                    </p>
-                </b>
-            </div>
-            <b>
-                <p style="font-size: 40px">Về dịch vụ bán hàng second hand</p>
-            </b>
-            <p>
-                Chúng tôi bắt tay vào đảm nhiệm từ những khâu nhỏ nhất như lên ý
-                tưởng, <br />thiết kế website, lập trình tính năng, hoàn thiện và phát
-                triển website <br />Đảm bảo 100% website chuyên nghiệp, hiệu quả khi
-                sử dụng.
-            </p>
-        </section>
-
-        <section id="section-4">
-            <div class="p-2 d-flex flex-row h-100 align-items-center">
-                <div class="p-4 col">
-                    <img src="../images/eco-four-panda.png" class="img-fluid" alt="panda" />
-                </div>
-                <div class="p-4 flex-column col-7 justify-content-center">
-                    <div class="row m-4 p-2 huge-text text-primary">
-                        <p>100,879+ SẢN PHẨM ĐÃ ĐƯỢC BÁN!</p>
-                    </div>
-                    <div class="row justify-content-around">
-                        <div class="videobox m-4"></div>
-                        <div class="videobox m-4"></div>
-                        <div class="videobox m-4"></div>
-                        <div class="videobox m-4"></div>
-                        <div class="videobox m-4"></div>
-                        <div class="videobox m-4"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-5">
-            <div class="container-fluid m-5">
-                <div class="row justify-content-center m-4">
-                    <p class="h3">Những mặt hàng bạn có thể bán</p>
-                    <p>
-                        Bạn có thể đăng bán hầu hết các mặt hàng thời trang bao gồm túi
-                        xách, phụ kiện, giày dép, nữ trang và trang phục may mặc. Miễn
-                        chúng đáp ứng Quy định bán hàng của chúng tôi!
-                    </p>
-                </div>
-                <div class="row justify-content-lg-center d-flex align-items-center">
-                    <div class="m-4 imagebox">
-                        <img src="../images/bongtai.jpg" class="img-thumbnail" alt="bongtai" />
-                    </div>
-                    <div class="m-4 imagebox">
-                        <img src="../images/dongho.jfif" class="img-thumbnail" alt="dongho" />
-                    </div>
-                    <div class="m-4 imagebox">
-                        <img src="../images/daynitLV.jpg" class="img-thumbnail" alt="daynitLV" />
-                    </div>
-                    <div class="m-4 imagebox">
-                        <img src="../images/giaynike.jpg" class="img-thumbnail" alt="giaynike" />
-                    </div>
-                    <div class="m-4 imagebox">
-                        <img src="../images/quanGucci.jpg" class="img-thumbnail" alt="quangucci" />
-                    </div>
-                    <div class="m-4 imagebox">
-                        <img src="../images/aobalenciaga.jpg" class="img-thumbnail" alt="aobalenciaga" />
-                    </div>
-                </div>
-            </div>
-            <div class="m-auto w-75 linebreak-art"></div>
-            <div class="d-flex m-auto justify-content-center">
-                <img src="../images/clothe-icon.png" class="figure-img" alt="clothes-icon" />
-                <img src="../images/furniture-svgrepo-com.svg" class="figure-img" alt="furnitures-icon" />
-                <img src="../images/sneakers-icon.png" class="figure-img" alt="sneaker-icon" />
-            </div>
-        </section>
-
-        <section id="section-6">
-            <div class="triangle-container">
-                <img src="../images/MODEL1.png" alt="Vertex 1" class="vertex vertex-1">
-                <img src="../images/MODEL2.png" alt="Vertex 2" class="vertex vertex-2">
-                <img src="../images/MODEL3.png" alt="Vertex 3" class="vertex vertex-3">
-            </div>
-        </section>
+        </div>
 
         <!-- toolbar (position: fixed) -->
         <div id="toolbar" class="p-1">
@@ -371,6 +378,7 @@
     </main>
 
     <!-- footer -->
+    <div class="dummy-element-footer"></div>
     <footer class="footer-distributed position-relative bottom-0">
         <div class="footer-left">
             <h3>
