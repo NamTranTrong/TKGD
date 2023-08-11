@@ -4875,7 +4875,6 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem
 }
 
@@ -4907,9 +4906,15 @@ fieldset:disabled .btn {
 }
 
 .card-body {
-    flex: 1 1 auto;
-    padding: 1rem 1rem
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    border: none;
 }
+
+.card-body:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 .card-title {
     margin-bottom: .5rem
@@ -5991,7 +5996,7 @@ fieldset:disabled .btn {
     position: relative;
     width: auto;
     margin: .5rem;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .modal.fade .modal-dialog {
