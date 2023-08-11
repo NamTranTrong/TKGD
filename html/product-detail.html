@@ -23,6 +23,7 @@
     <script src="../js/bootstrap@5.0.2.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/style.js"></script>
+    <script src="../js/product-detail.js"></script>
 
     <title>Product Detail</title>
 </head>
@@ -34,7 +35,7 @@
                 <div class="col-sm-5 col">
                     <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Shop</a>
                                 <ul class="dropdown-menu">
@@ -46,7 +47,7 @@
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Danh Mục</a>
                                 <ul class="dropdown-menu">
@@ -55,7 +56,7 @@
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Đăng tin</a>
                                 <ul class="dropdown-menu">
@@ -64,7 +65,7 @@
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Blog/ Review</a>
                                 <ul class="dropdown-menu">
@@ -73,7 +74,7 @@
                                     <li><a class="dropdown-item" href="#">A third link</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item custom-link dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Contact</a>
                                 <ul class="dropdown-menu">
@@ -169,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section class="container  about-product">
+        <section class="container about-product">
             <div class="col-6 about-product-left">
                 <div class="list-img-detail">
                     <img class="img-detail"  src="../images/đồ-pass-1.jpg" alt="">
@@ -203,7 +204,36 @@
                         <button class="codepro-custom-btn codepro-btn-7" target="blank" title="Code Pro" onclick="window.open('https://www.code.pro.vn/')"><span>LIÊN HỆ NGAY VÓI CHỦ SỞ HỮU !!!</span></button>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque porro doloribus doloremque atque voluptatem repellat earum placeat nisi magnam? Dolorum soluta enim natus corrupti necessitatibus velit exercitationem magni facilis architecto.</p>
+                        <p>Lorem ipsum dolor sit amet  <strong>consectetur</strong>  , adipisicing elit. Itaque porro doloribus  <strong>doloremque atque voluptatem</strong>  repellat earum placeat nisi magnam? <strong>soluta</strong> Dolorum  enim natus corrupti necessitatibus velit  <strong>exercitationem magni</strong>  facilis architecto.</p>
+                    </div>
+                    <div class="detail-description">
+                        <div class="menu-description">
+                            <ul>
+                                <li ><a class="custom-link option" onclick="showDiv(1)" style="text-decoration: none;" >Số liệu</a></li>
+                                <li ><a class="custom-link option" onclick="showDiv(2)" style="text-decoration: none;" >Hướng dẫn sử dụng</a></li>
+                                <li ><a class="custom-link option" onclick="showDiv(3)" style="text-decoration: none;" >Mô tả chi tiết</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-description content">
+                            <div id="div1" class="text-description-1">
+                                <p><strong style="color:#777">Collecttion : </strong>Prima</p>
+                                <p><strong style="color:#777">Format du boitier : </strong>Rond 265mm</p>
+                                <p><strong style="color:#777">Mouvement : </strong>MYOTA - Quartz 2035</p>
+                                <p><strong style="color:#777">Boitier : </strong>Acier</p>
+                                <p><strong style="color:#777">Barcelet : </strong>Marran</p>
+                                <p><strong style="color:#777">Aiguillet : </strong>Blanc</p>
+                                <p><strong style="color:#777">Boitier : </strong>Acier</p>
+                                <p><strong style="color:#777">Cardan : </strong>Noir</p>
+                            </div>
+                            <div id="div2" class="hidden text-description-2">
+                                <div class="div-corner-img">
+                                    <img class="corner-image" src="../images/ảnh-vệ-sinh-giày.png" alt="">
+                                </div>
+                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas harum veritatis quidem officia? Mollitia cumque adipisci reprehenderit provident sed doloribus? Qui recusandae non illum ducimus explicabo laborum libero. Voluptates, dolorem.
+                                 
+                            </div>
+                            <div id="div3" class="hidden text-description-3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
