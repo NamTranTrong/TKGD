@@ -36,47 +36,25 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Shop</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                                    <li><a class="dropdown-item" href="post.html">POST</a></li>
+                                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+                            </li>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="post.html" role="button">Đăng tin</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Danh Mục</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Đăng tin</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Blog/ Review</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                                <a class="nav-link dropdown-toggle" href="blog.html" role="button"
+                                    data-bs-toggle="dropdown">Blog/Review</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Contact</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -186,12 +164,21 @@
                         <small class="message-error" id="psw-error"></small>
                     </div>
 
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember">Remember me
-                    </label>
+                    <!-- <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="remember_me" value="Remember me">
+                        <label class="form-check-label" for="">Remember me</label>
+                    </div> -->
 
-                    <div class="div-login form-group">
-                        <input type="submit" value="Log in" class="btn login_btn" formaction="index_acc.html" />
+                    <div class="btn-group" role="group" data-bs-toggle="buttons">
+                        <label class="btn btn-outline-light active" style="background-color: #f6de2d;">
+                            <input type="checkbox" class="me-2" name="" id="" checked autocomplete="off"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="div-login form-group text-center">
+                        <!-- <input type="submit" value="Log in" class="btn login_btn" formaction="index_acc.html" /> -->
+                        <a name="loginbtn" id="loginbtn" class="btn login_btn" href="index_acc.html" role="button">Log
+                            in</a>
                     </div>
 
                     <a href="">Quên tài khoản?</a><br>
@@ -204,22 +191,22 @@
     </main>
 
     <script>
-        function validate(){
+        function validate() {
             const username = document.getElementById("username").value;
             const psw = document.getElementById("password").value;
 
-            if (username === ""){
-                document.getElementById("name-error").innerHTML="Vui long nhap ten";
+            if (username === "") {
+                document.getElementById("name-error").innerHTML = "Vui long nhap ten";
                 return false;
             }
 
-            if (username.length < 3 || username.length > 10){
-                document.getElementById("name-error").innerHTML="Username co do dai tu 3 den 10";
+            if (username.length < 3 || username.length > 10) {
+                document.getElementById("name-error").innerHTML = "Username co do dai tu 3 den 10";
                 return false;
             }
 
-            if (psw === ""){
-                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
+            if (psw === "") {
+                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau";
                 return false;
             }
             return true;
@@ -240,7 +227,7 @@
 
                 <a href="#">About</a>
 
-                <a href="#">Faq</a>
+                <a href="FAQ.html">Faq</a>
 
                 <a href="#">Contact</a>
             </p>

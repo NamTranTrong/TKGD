@@ -165,3 +165,7 @@ body {
     height: 1500px;
   }
 }
+
+.card-body {
+  border-radius: 0%;
+}
