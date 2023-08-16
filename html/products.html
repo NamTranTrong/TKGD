@@ -818,10 +818,12 @@
                         <div class="carousel-item active">
                             <div class="container">
                                 <div class="row mb-5 align-items-start">
-                                    <div class="col">
+                                    <div class="col" onclick="redirectToNewPage()">
                                         <div class="card" style="width: 18rem;">
-                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
+                                            <a href="product-detail.html">
+                                                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf8nrg8ge53rb8_tn"
                                                 class="card-img-top" alt="dongho">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">price $</p>
@@ -1260,6 +1262,11 @@
 
     <!-- script -->
     <script src="../js/budget-slider.js"></script>
+    <script>
+        function redirectToNewPage() {
+          window.location.href = "product-detail.html"; // Điều hướng đến trang mới
+        }
+      </script>
 </body>
 
 </html>
