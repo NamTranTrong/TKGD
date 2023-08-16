@@ -23,8 +23,7 @@
     <script src="../js/bootstrap@5.0.2.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/style.js"></script>
-
-    <title>Đăng kí</title>
+    <title>Đăng nhập</title>
 </head>
 
 <body>
@@ -37,47 +36,25 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Shop</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                                    <li><a class="dropdown-item" href="post.html">POST</a></li>
+                                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+                            </li>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="post.html" role="button">Đăng tin</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Danh Mục</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Đăng tin</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Blog/ Review</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                                <a class="nav-link dropdown-toggle" href="blog.html" role="button"
+                                    data-bs-toggle="dropdown">Blog/Review</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Contact</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -121,13 +98,14 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="../html/login.html" role="button">
+                                <a class="nav-link" href="#" role="button">
                                     <button type="button" class="elementor-button">Đăng Nhập</button>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -149,13 +127,13 @@
                             </div>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Đăng ký
+                            Danh sách sản phẩm
                         </li>
                     </ol>
                 </nav>
             </div>
-            <div class="container h-100">
-                <div class="d-flex justify-content-end h-100">
+            <div class=" container h-100">
+                <div class="div-login d-flex justify-content-end h-100">
                     <div class="searchbar">
                         <input class="search_input" type="text" name="" placeholder="Nhập tên, nhãn hàng, địa điểm...">
                         <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
@@ -164,130 +142,73 @@
             </div>
         </section>
 
-        <section class="vh-100 form-signin">
-            <div class="container-fluid login">
-                <form id="form" class="form error" action="../html/index_acc.html" method="POST" onsubmit="return validate() ">
+        <section class="vh-100 form-login">
+            <div class="div-login container-fluid login">
+                <form id="form" class="form error" method="POST" onsubmit="return validate() ">
                     <div>
-                        <h1>Sign in</h1>
+                        <h1>Log in</h1>
                     </div>
-                    <p>Bạn đã có tài khoản? <a href="../html/login.html">Đăng nhập</a></p>
+                    <p>Bạn chưa có tài khoản? <a href="../html/signup.html">Đăng ký</a></p>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="email" style="float:left"><b>Email</b></label>
-                        <input id="email" type="text" class="form-control w-100" placeholder="Enter Email" name="email"/>
-                        <small class="message-error" id="email-error"></small>
-                    </div>
-
-                    <div class="div-login input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="email" style="float:left"><b>Username</b></label>
-                        <input id="username" type="text" class="form-control w-100" placeholder="Enter Username" name="username"/>
+                        <label class="h6" for="username" style="float:left"><b>Username or Email</b></label>
+                        <input id="username" type="text" class="form-control w-100"
+                            placeholder="Enter Username or Email" name="username" />
                         <small class="message-error" id="name-error"></small>
                     </div>
 
                     <div class="div-login input-group form-group" style="flex-direction: column;">
                         <label class="h6" for="password"><b>Password</b></label>
-                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password" name="password"/>
+                        <input id="password" type="password" class="form-control w-100" placeholder="Enter Password"
+                            name="password" />
                         <small class="message-error" id="psw-error"></small>
                     </div>
 
-                    <div class="div-login input-group form-group" style="flex-direction: column;">
-                        <label class="h6" for="confirm_password"><b>Confirm Password</b></label>
-                        <input id="confirm_password" type="password" class="form-control w-100" placeholder="Enter Confirm Password" name="password"/>
-                        <small class="message-error" id="re-psw-error"></small>
+                    <!-- <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="remember_me" value="Remember me">
+                        <label class="form-check-label" for="">Remember me</label>
+                    </div> -->
+
+                    <div class="btn-group" role="group" data-bs-toggle="buttons">
+                        <label class="btn btn-outline-light active" style="background-color: #f6de2d;">
+                            <input type="checkbox" class="me-2" name="" id="" checked autocomplete="off"> Remember me
+                        </label>
                     </div>
 
-                    <div class="div-login form-group">
-                        <input type="submit" value="Sign in" class="btn login_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
+                    <div class="div-login form-group text-center">
+                        <!-- <input type="submit" value="Log in" class="btn login_btn" formaction="index_acc.html" /> -->
+                        <a name="loginbtn" id="loginbtn" class="btn login_btn" href="index_acc.html" role="button">Log
+                            in</a>
                     </div>
+
+                    <a href="">Quên tài khoản?</a><br>
+                    <a href="">Quên mật khẩu?</a><br>
+                    <a href="">Không thể đăng nhập</a>
                 </form>
             </div>
         </section>
-
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">2hand Shop</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Ban da dang ki tai khoan thanh cong</p>
-                        </div>
-                        <div class="modal-footer align-self-center">
-                            <button id ="okBtn" type="button" class="btn btn-primary">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- main -->
     </main>
 
     <script>
-        document.getElementById("okBtn").addEventListener("click", function(){
-            window.location.href = "../html/index_acc.html";
-        });
-
-        function validate(){
+        function validate() {
             const username = document.getElementById("username").value;
             const psw = document.getElementById("password").value;
-            const re_psw = document.getElementById("confirm_password").value;
-            const email = document.getElementById("email").value;
-            const pattern = /@./;
-            const check_email = pattern.test(email);
-            const check_psw = pattern_psw.test(psw.value);
 
-            if (username === ""){
-                document.getElementById("name-error").innerHTML="Vui long nhap ten";
-                document.getElementById("username").style.border = "2px solid red";
+            if (username === "") {
+                document.getElementById("name-error").innerHTML = "Vui long nhap ten";
                 return false;
             }
 
-            if (username.length < 3 || username.length > 10){
-                document.getElementById("psw-error").innerHTML="Username co do dai tu 3 den 10";
-                document.getElementById("username").style.border = "2px solid red";
+            if (username.length < 3 || username.length > 10) {
+                document.getElementById("name-error").innerHTML = "Username co do dai tu 3 den 10";
                 return false;
             }
 
-            if (psw === ""){
-                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau";
-                document.getElementById("password").style.border = "2px solid red";
+            if (psw === "") {
+                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau";
                 return false;
             }
-
-            if (psw.length < 8){
-                document.getElementById("psw-error").innerHTML="Vui long nhap mat khau co toi thieu 8 ky tu.";
-                document.getElementById("password").style.border = "2px solid red";
-                document.getElementById("psw-error").style.fontSize = "12px"
-                return false;
-            }
-
-            if (re_psw === ""){
-                document.getElementById("re-psw-error").innerHTML="Vui long nhap lai mat khau";
-                document.getElementById("confirm_password").style.border = "2px solid red";
-                return false;
-            }
-
-            if (email === ""){
-                document.getElementById("psw-error").innerHTML="Vui long nhap email";
-                document.getElementById("email").style.border = "2px solid red";
-                return false;
-            }
-
-            if (check_email == false)
-            {
-                document.getElementById("psw-error").innerHTML = 'Please fill out a valid email format';
-                document.getElementById("email").style.border = "2px solid red";
-                return false;
-            }
-
-            if (psw.value === re_psw.value){
-                document.getElementById("re-psw-error").innerHTML="Mat khau khong trung khop";
-                document.getElementById("confirm_password").style.border = "2px solid red";
-                return false;
-            }
-
             return true;
         }
     </script>
@@ -306,7 +227,7 @@
 
                 <a href="#">About</a>
 
-                <a href="#">Faq</a>
+                <a href="FAQ.html">Faq</a>
 
                 <a href="#">Contact</a>
             </p>
