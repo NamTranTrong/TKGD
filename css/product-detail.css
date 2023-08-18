@@ -1,14 +1,13 @@
 .about-product {
-    height: 80vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
 }
 
 .about-product-left {
-    height: 100%;
+    height: 70%;
     position: relative;
+
 }
 
 .about-product-right {
@@ -200,4 +199,138 @@
     margin-top: 30px;
     width: 80%;
 }
+
+.detail-description{
+    margin-top : 30px;
+    width: 100%;
+}
+
+.menu-description{
+    font-family: cursive;
+}
+
+.detail-description ul{
+    padding-left: 0;
+    display: flex;
+}
+
+.detail-description li{
+    list-style:  none;
+    padding-right : 35px;
+    cursor: pointer;
+}
+.detail-description li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.text-description{
+    margin-top: 20px;
+}
+  
+  
+.hidden {
+    display: none;
+}
+
+.text-description p{
+    color: #999;
+}
+
+.text-description-2{
+    position: relative;
+    width: 100%;
+}
+
+.div-corner-img{
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+}
+
+.corner-image {
+  width: 100px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
+  height: 100px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
+}
+
+.text-description-2 p{
+    margin: 0;
+}
+
+.info-part{
+    padding-right: 15px;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-part-1{
+    width: 90%;
+    height: 100%;
+    padding-right: 20px;
+    border-radius:20% ;
+}
+
+.img-info{
+    width: 90%;
+    height: 55%;
+    margin-left:29px;
+    position: relative;
+    padding:25px 0 0 15px;  
+}
+
+.button-flow{
+    width: 90%;
+    height: 30%;
+    margin-left:70px;   
+}
+
+.outer-circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #e9e10a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .inner-image {
+    max-width: 160%;
+    max-height: 160%;
+  }
+
+  .related-product{
+    height: 70vh;
+  }
+  .text-related-product{
+    height: 10%;
+    position: relative;
+  }
+
+  .text-related-product::after{
+        content: "";
+        position: absolute;
+        text-align: center;
+        width: 5%;
+        height: 5px; /* Chiều dài của đường viền dưới */
+        background-color: #fff200;
+        bottom: 0;
+}
+
+.hover-button:hover{
+    border-color: #ee1818  !important;
+    color: #ee1818 !important;
+    font-weight: 400;
+}
+
+
+
+
+
+
 

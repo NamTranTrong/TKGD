@@ -6,8 +6,7 @@
   transform: translate(-50%, -50%);
 }
 
-<b:tag name='style'>/* <![CDATA[ */
-   .buttons_added {
+  .buttons_added {
   opacity: 1;
   display: inline-block;
   display: -ms-inline-flexbox;
@@ -59,4 +58,3 @@
   color: #F4E04D;
   border: #E9EAEE solid 1px;
 }
-</b: tag>;
