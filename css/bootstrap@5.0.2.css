@@ -4875,7 +4875,11 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+<<<<<<< HEAD
 border: 1px solid rgba(0, 0, 0, .125);
+=======
+    border: 1px solid rgba(0, 0, 0, .125);
+>>>>>>> 4daa5819f3674493082a0d266b7196ffe15122f9
     border-radius: .25rem
 }
 
@@ -4907,15 +4911,9 @@ border: 1px solid rgba(0, 0, 0, .125);
 }
 
 .card-body {
-    padding: 1rem 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 30px;
-    border: none;
+    flex: 1 1 auto;
+    padding: 1rem 1rem
 }
-
-.card-body:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
 
 .card-title {
     margin-bottom: .5rem
@@ -5527,18 +5525,17 @@ border: 1px solid rgba(0, 0, 0, .125);
     color: #212529;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 25px;
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, .125)
 }
 
 .list-group-item:first-child {
-    border-radius: 25px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit
 }
 
 .list-group-item:last-child {
-    border-radius: 25px;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit
 }
 
 .list-group-item.disabled,
@@ -5550,10 +5547,9 @@ border: 1px solid rgba(0, 0, 0, .125);
 
 .list-group-item.active {
     z-index: 2;
-    color: #000;
-    background-color: #F4E04D;
-    border-color: #F4E04D;
-    font-weight: bold;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd
 }
 
 .list-group-item+.list-group-item {
@@ -5999,7 +5995,7 @@ border: 1px solid rgba(0, 0, 0, .125);
     position: relative;
     width: auto;
     margin: .5rem;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .modal.fade .modal-dialog {
