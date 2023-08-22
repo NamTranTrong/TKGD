@@ -334,21 +334,63 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--                    Pagination-->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center" style="padding: 10px">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
 
-                                <div class="card mb-4">
-                                    <div class="card-body p-4 d-flex flex-row">
-                                        <div class="form-outline flex-fill">
-                                            <input type="text" id="form1" class="form-control form-control-lg" />
-                                            <label class="form-label mb-0" for="form1">Discount code</label>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-warning btn-lg ms-3">Apply</button>
+                                <div class="row" style="margin-top: 40px">
+                                    <div class="col-6 d-flex flex-row">
+                                        <button type="button" class="btn btn-secondary">CONTINUE SHOPPING</button>
+                                    </div>
+                                    <div class="col-6 d-flex flex-row-reverse">
+                                        <button type="button" class="btn btn-secondary">
+                                            <i class="fa fa-rotate-right"></i>
+                                            UPDATE CART</button>
                                     </div>
                                 </div>
 
-                                <div class="card">
-                                    <div class="card-body">
-                                        <button type="button" class="btn btn-warning btn-block btn-lg">Proceed to
-                                            Pay</button>
+                                <div class="row" style="margin: 40px 0px 40px 0px">
+                                    <div class="col-8">
+                                        <label class="d-flex flex-row" style="font-size: 20px"><b>DISCOUNT CODES</b></label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="Username" width="50px">
+                                            </div>
+                                            <div class="col-6 d-flex flex-row">
+                                                <button type="button" class="btn btn-secondary">APPLY COUPON</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4" style="background: #ddd; padding: 10px">
+                                        <b class="d-flex flex-row" style="font-size: 20px">Cart Total</b>
+                                        <div class="row">
+                                            <div class="col-6 d-flex flex-row"><b>Subtotal</b></div>
+                                            <div class="col-6 d-flex flex-row-reverse" style="color: red">300.000VND</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 d-flex flex-row"><b>Total</b></div>
+                                            <div class="col-6 d-flex flex-row-reverse" style="color: red">300.000VND</div>
+                                        </div>
+                                        <div class="row" style="margin: 0px 10px">
+                                            <button type="button" class="btn btn-success" >
+                                                <a class="nav-link" href="../html/shopping_cart_proccessing.html">PROCEED TO CHECKOUT</a></button>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -456,10 +498,10 @@
                     euismod convallis velit, eu auctor lacus vehicula sit amet.
                 </p>
                 <div class="footer-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </footer>
