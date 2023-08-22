@@ -8,15 +8,24 @@
   background: #fefbe3;
 }
 
-#section-4 > img {
+#section-4>img {
   height: 80%;
 }
 
 .videobox {
-  height: 160px;
-  width: 240px;
-  background: #000;
+  height: 200px;
+  width: 360px;
   border-radius: 30px;
+  margin: 1rem 1rem 0 0;
+
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
 .huge-text {
@@ -52,14 +61,18 @@
 .triangle-container {
   position: relative;
   margin: auto;
-  width: 100%; /* Adjust the width and height as needed */
-  height: 300px; /* To create a triangle, the height should be less than the width */
+  width: 100%;
+  /* Adjust the width and height as needed */
+  height: 300px;
+  /* To create a triangle, the height should be less than the width */
 }
 
 .vertex {
   position: absolute;
-  width: 12rem; /* Adjust the size of the vertex images */
-  height: auto; /* Adjust the size of the vertex images */
+  width: 12rem;
+  /* Adjust the size of the vertex images */
+  height: auto;
+  /* Adjust the size of the vertex images */
 }
 
 /* Define the coordinates for the vertices */
