@@ -11,7 +11,9 @@
     <script src="../js/bootstrap@5.0.2.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/style.js"></script>
-    <title>Trang Chủ</title>
+
+    <link rel="icon" href="../images/logo-shop.png" type="image/png">
+    <title>Đăng tin</title>
 </head>
 
 <body>
@@ -22,30 +24,20 @@
                 <div class="col-sm-5 col">
                     <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
                         <ul class="navbar-nav">
-                            <li class="nav-item custom-link dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
-                                    <li><a class="dropdown-item" href="post.html">POST</a></li>
-                                    <li><a class="dropdown-item" href="#">BLOG</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                </ul>
+                            <li class="nav-item custom-link">
+                                <a class="nav-link" href="index.html" role="button">Trang chủ</a>
                             </li>
                             <li class="nav-item custom-link">
                                 <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+                            </li>
                             <li class="nav-item custom-link">
                                 <a class="nav-link" href="post.html" role="button">Đăng tin</a>
                             </li>
                             <li class="nav-item custom-link">
-                                <a class="nav-link" href="#" role="button">Blog/ Review</a>
+                                <a class="nav-link" href="blog.html" role="button">Blog</a>
                             </li>
                             <li class="nav-item custom-link">
-                                <a class="nav-link" href="#" role="button">Contact</a>
+                                <a class="nav-link" href="#" role="button">Liên hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -79,27 +71,11 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                    <i class="fa-solid fa-globe fa-xl"></i>
+                                <a class="nav-link" href="../html/login.html" role="button">
+                                    <button type="button" class="elementor-button">
+                                        Đăng Nhập
+                                    </button>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item custom-link dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">
-                                    <i class="fa-solid fa-user"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href=""><i class="fa-solid fa-info"></i> Profile</a></li>
-                                    <li><a class="dropdown-item" href="shopping_cart_wait_confirm.html"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                    <li><a class="dropdown-item" href="#">A third link</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question"></i> FQA</a></li>
-                                    <li><a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -108,6 +84,7 @@
         </nav>
     </header>
     <div class="dummy-element"></div>
+
     <main>
         <!-- search-box area -->
         <section class="container head-search">
@@ -125,7 +102,7 @@
                             </div>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Đăng bài
+                            Đăng tin
                         </li>
                     </ol>
                 </nav>
@@ -195,9 +172,9 @@
     <section class="section-form-post container">
         <div class="col-5 form-post-left">
             <div class="text-tags">
-                <h5 class="text-post-1"> Tên sản phẩm <i class="fa-solid fa-star-of-life"
-                        style="color: #e64528;"></i></h5>
-                <input placeholder="Nhập tên của sản phẩm được bán" type="text"class="form-control">
+                <h5 class="text-post-1"> Tên sản phẩm <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i>
+                </h5>
+                <input placeholder="Nhập tên của sản phẩm được bán" type="text" class="form-control">
                 <br>
             </div>
             <div>
@@ -206,30 +183,33 @@
                             style="color: #e64528;"></i></h5>
                     <p class="text-policy">Xem chính sách đăng ảnh, video của 3R</p>
                 </div>
-    
+
                 <div class="text-content">
                     <h5 class="text-post-1"> Tiêu đề tin đăng và Mô tả chi tiết <i class="fa-solid fa-star-of-life"
                             style="color: #e64528;"></i></h5>
                     <textarea placeholder=" Nói gì đó về sản phẩm để thu hút nhiều người mua hơn nhé !" name="" id=""
                         cols="70" rows="6"></textarea>
-                        <br>
+                    <br>
                 </div>
                 <div class="text-location">
-                    <h5 class="text-post-1"> Địa chỉ <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i></h5>
+                    <h5 class="text-post-1"> Địa chỉ <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i>
+                    </h5>
                     <input placeholder="Số nhà, đường, phường, xã, quận, huyện, thành phố,..." type="text"
                         class="form-control">
-                        <br>
+                    <br>
                 </div>
-                <button type="button" class="btn btn-warning" style="width: 100%" data-bs-toggle="modal" data-bs-target="#success_modal"><b>ĐĂNG BÁN</b></button>
+                <button type="button" class="btn btn-warning" style="width: 100%" data-bs-toggle="modal"
+                    data-bs-target="#success_modal"><b>ĐĂNG BÁN</b></button>
             </div>
-            
+
         </div>
 
         <div class="col-5 form-post-right">
             <div>
                 <span><i class="fa-solid fa-wand-magic-sparkles fa-beat" style="color: #7ca6ee;"></i></span>
                 <span class="tips-text">Tips ăn ảnh</span>
-                <p style="color:#7ca6ee;font-size: 20px;font-style: italic;">" Hãy <strong>chăm chút</strong> những bức ảnh của bạn và thông tin về mặt hàng để tạo <strong>uy tín</strong> cho bản thân nhé! "</p>
+                <p style="color:#7ca6ee;font-size: 20px;font-style: italic;">" Hãy <strong>chăm chút</strong> những bức
+                    ảnh của bạn và thông tin về mặt hàng để tạo <strong>uy tín</strong> cho bản thân nhé! "</p>
             </div>
             <div class="text-status">
                 <h5 class="text-post-1"> Loại người dùng <i class="fa-solid fa-star-of-life"
@@ -243,7 +223,8 @@
             </div>
 
             <div class="text-tags">
-                <h5 class="text-post-1"> Loại sản phẩm <i class="fa-solid fa-star-of-life"style="color: #e64528;"></i></h5>
+                <h5 class="text-post-1"> Loại sản phẩm <i class="fa-solid fa-star-of-life" style="color: #e64528;"></i>
+                </h5>
                 <select class="form-control">
                     <option value="fashion">Thời trang</option>
                     <option value="household_items">Vật dụng gia đình</option>
@@ -267,7 +248,7 @@
                 <br>
                 <h5 class="text-post-1"> Giá tiền sản phẩm <i class="fa-solid fa-star-of-life"
                         style="color: #e64528;"></i></h5>
-                <input placeholder="Giá tiền sản phẩm được bán" type="text"class="form-control">
+                <input placeholder="Giá tiền sản phẩm được bán" type="text" class="form-control">
                 <br>
             </div>
         </div>
@@ -318,69 +299,63 @@
             </div>
         </div>
     </div>
-    <!-- footer -->
-    <footer class="footer-distributed">
-        <div class="footer-left">
 
-            <h3>Company<span>logo</span></h3>
+    <!-- footer -->
+    <footer class="footer-distributed position-relative bottom-0">
+        <div class="footer-left">
+            <a href="index.html">
+                <h3>
+                    <span>
+                        <img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo" style="height: 4rem" />
+                    </span>
+                </h3>
+            </a>
 
             <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
-
-                <a href="#">Blog</a>
-
-                <a href="#">Pricing</a>
-
-                <a href="#">About</a>
-
-                <a href="#">Faq</a>
-
-                <a href="#">Contact</a>
+                <a href="index.html">Trang chủ</a>
+                <a href="products.html">Danh mục</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Liên hệ</a>
             </p>
 
-            <p class="footer-company-name">Company Name © 2015</p>
+            <p class="footer-company-name">The 3R © 2015</p>
         </div>
 
         <div class="footer-center">
-
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+                <p><span>227 Đ. Nguyễn Văn Cừ, Phường 4, Quận 5</span>Thành phố Hồ Chí Minh, Việt Nam</p>
             </div>
 
             <div>
                 <i class="fa fa-phone"></i>
-                <p>+1.555.555.5555</p>
+                <p>+84 123456789</p>
             </div>
 
             <div>
                 <i class="fa fa-envelope"></i>
                 <p><a href="mailto:support@company.com">support@company.com</a></p>
             </div>
-
         </div>
 
         <div class="footer-right">
-
             <p class="footer-company-about">
                 <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-                vehicula sit amet.
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+                euismod convallis velit, eu auctor lacus vehicula sit amet.
             </p>
 
             <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
             </div>
-
         </div>
-
     </footer>
 
     <script>
-        document.getElementById("okButton").addEventListener("click", function(){
+        document.getElementById("okButton").addEventListener("click", function () {
             window.location.href = "../html/product-detail.html";
         });
     </script>

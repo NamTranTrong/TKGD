@@ -26,7 +26,7 @@
     <script src="../js/style.js"></script>
 
     <link rel="icon" href="../images/logo-shop.png" type="image/png">
-    <title>Đăng nhập</title>
+    <title>Đăng ký</title>
 </head>
 
 <body>
@@ -98,7 +98,6 @@
     </header>
     <div class="dummy-element"></div>
 
-    <!-- main -->
     <main>
         <!-- search-box area -->
         <section class="container head-search">
@@ -116,13 +115,13 @@
                             </div>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Đăng nhập
+                            Đăng ký
                         </li>
                     </ol>
                 </nav>
             </div>
-            <div class=" container h-100">
-                <div class="div-login d-flex justify-content-end h-100">
+            <div class="container h-100">
+                <div class="d-flex justify-content-end h-100">
                     <div class="searchbar">
                         <input class="search_input" type="text" name="" placeholder="Nhập tên, nhãn hàng, địa điểm...">
                         <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
@@ -133,62 +132,64 @@
 
         <section class="form-section">
             <div class="form-container">
-                <form id="form" class="signup-form" method="POST" onsubmit="return validate()">
-                    <h1 class="form-title">Đăng nhập</h1>
-                    <p class="form-link">Bạn chưa có tài khoản? <a href="../html/signup.html">Đăng ký</a></p>
+                <form id="form" class="signup-form" action="../html/index_acc.html" method="POST"
+                    onsubmit="return validate()">
+                    <h1 class="form-title">Đăng ký</h1>
+                    <p class="form-link">Bạn đã có tài khoản? <a href="../html/login.html">Đăng nhập</a></p>
 
                     <div class="form-group">
-                        <label for="username">Tên đăng nhập hoặc email</label>
-                        <input id="username" type="text" class="form-control"
-                            placeholder="Nhập tên đăng nhập hoặc email" name="username">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" class="form-control" placeholder="Nhập Email" name="email">
+                        <small class="form-error" id="email-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Tên đăng nhập</label>
+                        <input id="username" type="text" class="form-control" placeholder="Nhập Tên đăng nhập"
+                            name="username">
                         <small class="form-error" id="name-error"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="password">Mật khẩu</label>
-                        <input id="password" type="password" class="form-control" placeholder="Nhập mật khẩu"
+                        <input id="password" type="password" class="form-control" placeholder="Nhập Mật khẩu"
                             name="password">
                         <small class="form-error" id="psw-error"></small>
                     </div>
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="rememberCheck" checked>
-                        <label class="form-check-label" for="rememberCheck">Lưu thông tin đăng nhập</label>
-                    </div>
-
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                        <label for="confirm_password">Xác nhận Mật khẩu</label>
+                        <input id="confirm_password" type="password" class="form-control"
+                            placeholder="Nhập lại Mật khẩu" name="confirm_password">
+                        <small class="form-error" id="re-psw-error"></small>
                     </div>
 
-                    <a href="#">Quên mật khẩu?</a><br>
-                    <a href="#">Không thể đăng nhập?</a>
+                    <button type="submit" class="btn btn-primary btn-block sigup-btn">Đăng ký</button>
                 </form>
             </div>
         </section>
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">2hand Shop</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ban da dang ki tai khoan thanh cong</p>
+                        </div>
+                        <div class="modal-footer align-self-center">
+                            <button id="okBtn" type="button" class="btn btn-primary">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main -->
     </main>
-
-    <script>
-        function validate() {
-            const username = document.getElementById("username").value;
-            const psw = document.getElementById("password").value;
-
-            if (username === "") {
-                document.getElementById("name-error").innerHTML = "Vui long nhap ten";
-                return false;
-            }
-
-            if (username.length < 3 || username.length > 10) {
-                document.getElementById("name-error").innerHTML = "Username co do dai tu 3 den 10";
-                return false;
-            }
-
-            if (psw === "") {
-                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau";
-                return false;
-            }
-            return true;
-        }
-    </script>
 
     <!-- footer -->
     <footer class="footer-distributed position-relative bottom-0">
@@ -243,6 +244,73 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("okBtn").addEventListener("click", function () {
+            window.location.href = "../html/index_acc.html";
+        });
+
+        function validate() {
+            const username = document.getElementById("username").value;
+            const psw = document.getElementById("password").value;
+            const re_psw = document.getElementById("confirm_password").value;
+            const email = document.getElementById("email").value;
+            const pattern = /@./;
+            const check_email = pattern.test(email);
+            const check_psw = pattern_psw.test(psw.value);
+
+            if (username === "") {
+                document.getElementById("name-error").innerHTML = "Vui long nhap ten";
+                document.getElementById("username").style.border = "2px solid red";
+                return false;
+            }
+
+            if (username.length < 3 || username.length > 10) {
+                document.getElementById("psw-error").innerHTML = "Username co do dai tu 3 den 10";
+                document.getElementById("username").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw === "") {
+                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau";
+                document.getElementById("password").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw.length < 8) {
+                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau co toi thieu 8 ky tu.";
+                document.getElementById("password").style.border = "2px solid red";
+                document.getElementById("psw-error").style.fontSize = "12px"
+                return false;
+            }
+
+            if (re_psw === "") {
+                document.getElementById("re-psw-error").innerHTML = "Vui long nhap lai mat khau";
+                document.getElementById("confirm_password").style.border = "2px solid red";
+                return false;
+            }
+
+            if (email === "") {
+                document.getElementById("psw-error").innerHTML = "Vui long nhap email";
+                document.getElementById("email").style.border = "2px solid red";
+                return false;
+            }
+
+            if (check_email == false) {
+                document.getElementById("psw-error").innerHTML = 'Please fill out a valid email format';
+                document.getElementById("email").style.border = "2px solid red";
+                return false;
+            }
+
+            if (psw.value === re_psw.value) {
+                document.getElementById("re-psw-error").innerHTML = "Mat khau khong trung khop";
+                document.getElementById("confirm_password").style.border = "2px solid red";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
