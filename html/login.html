@@ -121,7 +121,7 @@
                     </ol>
                 </nav>
             </div>
-            <div class=" container h-100">
+            <div class="container h-100">
                 <div class="div-login d-flex justify-content-end h-100">
                     <div class="searchbar">
                         <input class="search_input" type="text" name="" placeholder="Nhập tên, nhãn hàng, địa điểm...">
@@ -133,7 +133,7 @@
 
         <section class="form-section">
             <div class="form-container">
-                <form id="form" class="signup-form" method="POST" onsubmit="return validate()">
+                <form id="form" class="signup-form" onsubmit="return validate()" onchange="return validate()">
                     <h1 class="form-title">Đăng nhập</h1>
                     <p class="form-link">Bạn chưa có tài khoản? <a href="../html/signup.html">Đăng ký</a></p>
 
@@ -167,30 +167,8 @@
         </section>
     </main>
 
-    <script>
-        function validate() {
-            const username = document.getElementById("username").value;
-            const psw = document.getElementById("password").value;
-
-            if (username === "") {
-                document.getElementById("name-error").innerHTML = "Vui long nhap ten";
-                return false;
-            }
-
-            if (username.length < 3 || username.length > 10) {
-                document.getElementById("name-error").innerHTML = "Username co do dai tu 3 den 10";
-                return false;
-            }
-
-            if (psw === "") {
-                document.getElementById("psw-error").innerHTML = "Vui long nhap mat khau";
-                return false;
-            }
-            return true;
-        }
-    </script>
-
     <!-- footer -->
+    <div class="dummy-element-footer"></div>
     <footer class="footer-distributed position-relative bottom-0">
         <div class="footer-left">
             <a href="index.html">
@@ -243,6 +221,37 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function validate() {
+            const username = document.getElementById("username").value;
+            const psw = document.getElementById("password").value;
+
+            const nameError = document.getElementById("name-error");
+            const pswError = document.getElementById("psw-error");
+
+            nameError.textContent = ""; // Clear existing error messages
+            pswError.textContent = "";
+
+            if (username === "") {
+                nameError.textContent = "Vui lòng nhập tên";
+                return false;
+            }
+
+            if (username.length < 3 || username.length > 10) {
+                nameError.textContent = "Độ dài từ 3 đến 10 ký tự";
+                return false;
+            }
+
+            if (psw === "") {
+                pswError.textContent = "Vui lòng nhập mật khẩu";
+                return false;
+            }
+            
+            window.location.href = "./index_acc.html";
+            return false;
+        }
+    </script>
 </body>
 
 </html>
