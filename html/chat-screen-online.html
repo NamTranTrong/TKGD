@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/bootstrap@5.0.2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/scrollup.css" />
+    <link rel="stylesheet" href="../css/toolbar.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/chat-screen.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- bootstrap script -->
+    <script src="../js/bootstrap@5.0.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/style.js"></script>
+    <title>Tin nhắn</title>
+
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-white navbar-light">
+        <div class="container-fluid">
+          <div class="col-sm-5 col">
+            <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item custom-link dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                     data-bs-toggle="dropdown">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="products.html">PRODUCTS</a></li>
+                    <li><a class="dropdown-item" href="post.html">POST</a></li>
+                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item custom-link">
+                  <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+                <li class="nav-item custom-link">
+                  <a class="nav-link" href="post.html" role="button">Đăng tin</a>
+                </li>
+                <li class="nav-item custom-link">
+                  <a class="nav-link" href="#" role="button">Blog/ Review</a>
+                </li>
+                <li class="nav-item custom-link">
+                  <a class="nav-link" href="#" role="button">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col">
+            <a href="index.html">
+              <img class="logo" src="../images/logo-shop.png" alt="" />
+            </a>
+          </div>
+          <div class="col-sm-5 col">
+            <div class="collapse navbar-collapse collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-facebook-f fa-xl"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-globe fa-xl"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item custom-link dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                     data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href=""><i class="fa-solid fa-info"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="shopping_cart_wait_confirm.html"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question"></i> FQA</a></li>
+                    <li><a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="dummy-element"></div>
+    <div class="container">
+        <div class="sidebar">
+            <h2><b>Danh sách tin nhắn</b></h2>
+            <div class="list-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                      <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181660.png"
+                           style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="chat-screen-online.html" class="list-group-item list-group-item-action active" aria-current="true">Nguyễn Văn An</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="chat-screen-offline.html" class="list-group-item list-group-item-action" aria-current="true">Hoàng Văn Bảo</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181656.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Lê Thị Cẩm</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_boy_girl_female_male_woman_profile_smiley_happy_people_man_icon_181664.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Trần Trọng Nam</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181658.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Phùng Quốc Tuấn</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/96/avatar_face_man_boy_profile_smiley_happy_people_icon_181659.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Nguyễn Thị Hồng</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181663.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Lê Thị Hòa</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Lê Thị Uyên</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Lê Thị Uyên</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png"
+                             style="border-radius: 50%; background: white; width: 75%">
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="profile.html" class="list-group-item list-group-item-action" aria-current="true">Lê Thị Uyên</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="chatbox-header">
+                <div class="d-flex">
+                    <div class="p-2 w-100"><h4>Nguyễn Văn An</h4>
+                        <i class="fa-solid fa-circle" style="color: #39d53c;"></i> Đang hoạt động</div>
+                    <div class="p-2 flex-shrink-1"><i class="fa-solid fa-bars" style="padding-top: 15px"></i></div>
+                </div>
+            </div>
+            <div class="chatbox-messages">
+                <div class="list-group-item myself-message">
+                    Chào shop, cho mình hỏi sản phẩm đầm hồng còn hàng ko ạ?
+                </div>
+
+                <div class="list-group-item seller-message">
+                    Chào bạn, sản phẩm này bên mình còn ạ
+                </div>
+
+                <div class="conversation list-group-item myself-message" id="conversation"></div>
+            </div>
+            <div class="chatbox-input">
+                <input type="text" id="messageInput" placeholder="Nhập tin nhắn của bạn" style="width: 92%; height: 45px; border-radius: 50rem">
+                <button class="btn btn-warning justify-content-between" type="submit" style="width: 7.5%;" onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="dummy-element"></div>
+    <footer class="footer-distributed position-relative bottom-0">
+      <div class="footer-left">
+        <h3>
+          Company<span><img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo"
+                            style="height: 4rem" /></span>
+        </h3>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">The 3R © 2015</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+        function sendMessage() {
+        var messageInput = document.getElementById("messageInput");
+        var conversation = document.getElementById("conversation");
+        if (messageInput.value.length === 0){
+            alert("Vui lòng nhập tin nhắn");
+        }
+        else{
+            conversation.innerText = messageInput.value;
+            conversation.style.visibility = 'visible';
+        }
+        }
+    </script>
+</body>
+</html>
