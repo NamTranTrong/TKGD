@@ -1,3 +1,24 @@
 .dummy-element-footer {
   height: calc(100vh - 284px);
 }
+
+.cont-btn {
+  background-color: #f6de2d;
+  border: 1px solid #f6de2d;
+  color: black;
+}
+
+.page-number-btn {
+  border: 1px solid #bdbdbd;
+  color: black;
+}
+
+.page-item.active>* {
+  background-color: #f6de2d !important;
+  border-color: #f6de2d !important;
+  color: black !important;
+}
+
+p {
+  font-size: 0.8rem;
+}
