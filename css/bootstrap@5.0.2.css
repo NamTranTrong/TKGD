@@ -4875,8 +4875,17 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px 0px #666;
+}
+
+.card:hover{
+    z-index: 1;
+    top: -10px;
+    color: #495057;
+    text-decoration: none;
+    background-color: lightyellow;
 }
 
 .card>hr {
@@ -4908,7 +4917,8 @@ fieldset:disabled .btn {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1rem 1rem
+    padding: 1rem 1rem;
+    border-radius: 50%;
 }
 
 .card-title {
@@ -5506,7 +5516,8 @@ fieldset:disabled .btn {
     z-index: 1;
     color: #495057;
     text-decoration: none;
-    background-color: #f8f9fa
+    background-color: lightyellow;
+    top: -10px;
 }
 
 .list-group-item-action:active {
@@ -5524,6 +5535,7 @@ fieldset:disabled .btn {
     border: 2px solid rgba(0, 0, 0, .125);
     border-radius: 25px;
     margin: 10px;
+    box-shadow: 1px 1px 3px 0px #666;
 }
 
 .list-group-item:first-child {
