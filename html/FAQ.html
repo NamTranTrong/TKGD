@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/scrollup.css" />
     <link rel="stylesheet" href="../css/toolbar.css" />
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/modal.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,21 +139,18 @@
 
                 <label class="btn btn-outline-danger" for="vbtn-radio1">
                     <i class="fa fa-cart-shopping"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
                 </label>
 
                 <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off" />
 
                 <label class="btn btn-outline-danger" for="vbtn-radio2">
                     <i class="fa-sharp fa-solid fa-bell"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
                 </label>
 
                 <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off" />
 
                 <label class="btn btn-outline-danger" for="vbtn-radio3">
                     <i class="fa fa-comments"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
                 </label>
             </div>
         </div>
@@ -217,24 +215,18 @@
             </div>
         </section>
         
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">2hand Shop</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Shop Yêu Thích là những Shop được Shopee đánh giá có doanh số bán hàng và dịch vụ chăm sóc khách hàng tốt.
-                                Khi mua sắm tại các gian hàng thuộc phân loại Shop Yêu Thích, bạn sẽ được đảm bảo trải nghiệm mua sắm tốt
-                                nhất do những gian hàng này cần phải duy trì các tiêu chuẩn bán hàng nghiêm ngặt bởi các tiêu chí: Điểm đánh giá Shop,
-                                Tỉ lệ phản hồi Chat, Tỷ lệ đơn hàng giao trễ hoặc không thành công,...</p>
-                            <p>Những gian hàng thuộc phân loại Shop Yêu Thích+ sẽ được gắn biểu tượng "yêu thích" trên logo gian hàng,
-                                cũng như trên các sản phẩm mà gian hàng đăng bán</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="popup">
+            <header>
+                <span style="margin: 10px 10px 0px 10px">2hand Shop</span>
+                <div class="close"><i class="btn-close"></i></div>
+            </header>
+            <div class="content">
+                <p>Shop Yêu Thích là những Shop được Shopee đánh giá có doanh số bán hàng và dịch vụ chăm sóc khách hàng tốt.
+                    Khi mua sắm tại các gian hàng thuộc phân loại Shop Yêu Thích, bạn sẽ được đảm bảo trải nghiệm mua sắm tốt
+                    nhất do những gian hàng này cần phải duy trì các tiêu chuẩn bán hàng nghiêm ngặt bởi các tiêu chí: Điểm đánh giá Shop,
+                    Tỉ lệ phản hồi Chat, Tỷ lệ đơn hàng giao trễ hoặc không thành công,...</p>
+                <p>Những gian hàng thuộc phân loại Shop Yêu Thích+ sẽ được gắn biểu tượng "yêu thích" trên logo gian hàng,
+                    cũng như trên các sản phẩm mà gian hàng đăng bán</p>
             </div>
         </div>
         <!-- scroll up btn -->
@@ -266,6 +258,17 @@
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }
+
+            const viewBtn = document.querySelector(".card-faq"),
+                popup = document.querySelector(".popup"),
+                close = popup.querySelector(".close");
+            viewBtn.onclick = ()=>{
+                popup.classList.toggle("show");
+            }
+            close.onclick = ()=>{
+                viewBtn.click();
+            }
+        </script>
         </script>
     </main>
 
