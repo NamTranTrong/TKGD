@@ -30,8 +30,7 @@ header{
     padding: 25px;
     border-radius: 15px;
     top: -150%;
-    max-width: 380px;
-    width: 100%;
+    width: 1200px;
     height: 500px;
     opacity: 0;
     pointer-events: none;
@@ -63,7 +62,7 @@ header{
     border-bottom: 1px solid #ebedf9;
 }
 header span{
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 600;
 }
 header .close, .icons a{
@@ -72,6 +71,8 @@ header .close, .icons a{
     border-radius: 50%;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    margin-right: 0;
+    margin-left: auto;
 }
 header .close{
     color: #878787;
@@ -87,19 +88,19 @@ header .close:hover{
     background: #ebedf9;
 }
 .popup .content{
-    margin: 35px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     text-align: left;
 }
 .popup .icons{
-    margin: 15px 0 20px 0;
+    margin: 15px 0 15px 0;
 }
 .content p{
-    font-size: 16px;
+    font-size: 25px;
 }
 .content .icons a{
     height: 50px;
     width: 50px;
-    font-size: 20px;
+    font-size: 50px;
     text-decoration: none;
     border: 1px solid transparent;
 }

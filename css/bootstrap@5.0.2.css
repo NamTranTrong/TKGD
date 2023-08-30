@@ -4883,7 +4883,7 @@ fieldset:disabled .btn {
 .card:hover{
     z-index: 1;
     top: -10px;
-    color: #495057;
+    color: green;
     text-decoration: none;
     background-color: lightyellow;
 }
