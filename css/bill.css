@@ -4,7 +4,7 @@
     --darkWhite: #ccc;
     --black: #000000;
     --dark: #615c60;
-    --themeColor: #22b8d1;
+    --themeColor: #F4E04D;
     --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
@@ -71,7 +71,7 @@
 }
 
 .top-left .graphic-path p {
-    color: var(--white);
+    color: var(--black);
     height: 40px;
     left: 0;
     right: -100px;
@@ -98,7 +98,7 @@
 }
 
 .store-user h4 {
-    color: var(--themeColor);
+    color: black;
 }
 
 .extra-info p span {
@@ -107,7 +107,7 @@
 
 /* Product Section */
 thead {
-    color: var(--white);
+    color: var(--black);
     background: var(--themeColor);
 }
 
