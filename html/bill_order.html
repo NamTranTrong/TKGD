@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css -->
+  <link rel="stylesheet" href="../css/bootstrap@5.0.2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/scrollup.css" />
+  <link rel="stylesheet" href="../css/toolbar.css" />
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/bill.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet" />
+
+  <!-- bootstrap script -->
+  <script src="../js/bootstrap@5.0.2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/style.js"></script>
+
+  <title>Hóa đơn</title>
+  <link rel="icon" href="../images/logo-shop.png" type="image/png">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <div class="container-fluid">
+      <div class="col-sm-5 col">
+        <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item custom-link">
+              <a class="nav-link" href="index.html" role="button">Trang chủ</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link" href="products.html" role="button">Danh Mục</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link" href="post.html" role="button">Đăng tin</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link" href="blog.html" role="button">Blog</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link" href="#" role="button">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2 col">
+        <a href="index.html">
+          <img class="logo" src="../images/logo-shop.png" alt="" />
+        </a>
+      </div>
+      <div class="col-sm-5 col">
+        <div class="collapse navbar-collapse collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+              </a>
+            </li>
+            <li class="nav-item custom-link dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile.html"><i class="fa-solid fa-info"></i> Tài khoản</a>
+                </li>
+                <li><a class="dropdown-item" href="cart.html"><i
+                        class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                <li><a class="dropdown-item" href="FAQ.html"><i class="fa-solid fa-question"></i> FQA</a>
+                </li>
+                <li><a class="dropdown-item" href="index.html"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="dummy-element"></div>
+<div class=" page" size="A4">
+  <div class="p-5">
+    <section class="top-content bb d-flex justify-content-between">
+        <img src="../images/logo-shop.png" alt="" class="img-fluid" style="height: 50px">
+      <div class="top-left">
+        <div class="graphic-path">
+          <p>Hóa đơn</p>
+        </div>
+        <div class="position-relative">
+          <p>Số hóa đơn: <span>0001</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-user mt-2">
+      <div class="col-10">
+        <div class="row bb pb-3">
+          <div class="col-7">
+            <p>Người bán,</p>
+            <h4>Nguyễn Văn An</h4>
+            <p class="address"> 227 Nguyễn Văn Cừ, <br> Quận 5, <br>TP. HCM</p>
+            <div class="txn mt-2">SĐT: 0987654321</div>
+          </div>
+          <div class="col-5">
+            <p>Khách hàng,</p>
+            <h4>Lê Thúy Nga</h4>
+            <p class="address"> 1 Nguyễn Trãi, <br> Quận 1, <br>TP. HCM</p>
+            <div class="txn mt-2">SĐT: 0123456789</div>
+          </div>
+        </div>
+        <div class="row extra-info pt-3">
+          <div class="col-7">
+            <p>Phương thức thanh toán:<br> <span>Tiền mặt</span></p>
+            <p>Số đơn đặt hàng: <span>#868</span></p>
+          </div>
+          <div class="col-5">
+            <p>Ngày giao hàng:<br> <span>10-09-2023</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-area mt-2">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <td>Mô tả mặt hàng</td>
+          <td>Giá</td>
+          <td>Số lượng</td>
+          <td>Tổng cộng</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <div class="media">
+              <img class="mr-3 img-fluid" src="../images/t-shirt-grey.jpg" alt="Product 01">
+              <div class="media-body">
+                <p class="mt-0 title">Áo thun đơn giản</p>
+                Kích thước: M, Màu sắc: Xám
+              </div>
+            </div>
+          </td>
+          <td>200.000đ</td>
+          <td>1</td>
+          <td>200.000d</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="balance-info">
+      <div class="row">
+        <div class="col-8">
+          <p class="m-0 font-weight-bold"> Ghi chú: </p>
+          <p>Khách hàng có thể kiểm tra trước khi thanh toán</p>
+        </div>
+        <div class="col-4">
+          <table class="table border-0 table-hover">
+            <tr>
+              <td>Giá tiền:</td>
+              <td>200.000đ</td>
+            </tr>
+            <tr>
+              <td>Phí giao hàng:</td>
+              <td>10.000đ</td>
+            </tr>
+            <tfoot>
+            <tr>
+              <td>Tổng cộng:</td>
+              <td>210.000đ</td>
+            </tr>
+            </tfoot>
+          </table>
+
+          <!-- Signature -->
+          <div class="col-12">
+            <img src="../images/signature.png" class="img-fluid" alt="">
+            <p class="text-center m-0"> Chữ ký giám đốc </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="dummy-element"></div>
+<!-- toolbar (position: fixed) -->
+<div id="toolbar" class="p-1">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" />
+
+    <label class="btn btn-outline-danger" for="vbtn-radio1">
+      <i class="fa fa-cart-shopping"></i>
+    </label>
+
+    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off" />
+
+    <label class="btn btn-outline-danger" for="vbtn-radio2">
+      <i class="fa-sharp fa-solid fa-bell"></i>
+    </label>
+
+    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off" />
+
+    <label class="btn btn-outline-danger" for="vbtn-radio3">
+      <i class="fa fa-comments"></i>
+    </label>
+  </div>
+</div>
+
+<!-- scroll up btn -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
+<!-- increase and decrease quantity-->
+<script>
+  $('input.input-qty').each(function() {
+    var $this = $(this),
+            qty = $this.parent().find('.is-form'),
+            min = Number($this.attr('min')),
+            max = Number($this.attr('max'))
+    if (min == 0) {
+      var d = 0
+    } else d = min
+    $(qty).on('click', function() {
+      if ($(this).hasClass('minus')) {
+        if (d > min) d += -1
+      } else if ($(this).hasClass('plus')) {
+        var x = Number($this.val()) + 1
+        if (x <= max) d += 1
+      }
+      $this.attr('value', d).val(d)
+    })
+  })
+</script>
+</main>
+<footer class="footer-distributed position-relative bottom-0">
+  <div class="footer-left">
+    <a href="index.html">
+      <h3>
+                    <span>
+                        <img class="img-fluid" src="../images/logo-shop.png" alt="shop-logo" style="height: 4rem" />
+                    </span>
+      </h3>
+    </a>
+
+    <p class="footer-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="products.html">Danh mục</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Liên hệ</a>
+    </p>
+
+    <p class="footer-company-name">The 3R © 2015</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>227 Đ. Nguyễn Văn Cừ, Phường 4, Quận 5</span>Thành phố Hồ Chí Minh, Việt Nam</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+84 123456789</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+      euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/toolbar.css" />
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/cart.css">
-    <link rel="stylesheet" href="../css/modal.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -255,7 +254,7 @@
                                     <h5 class="mb-0">Hoàng Văn Bảo</h5>
                                 </div>
                                 <div class="col-md-1 col-lg-1 col-xl-1 text-end more-detail">
-                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-eye" onclick="displayBill()"></i>
                                 </div>
                             </div>
                         </div>
@@ -281,36 +280,6 @@
             </div>
         </div>
     </section>
-
-    <div class="popup">
-        <header>
-            <span style="margin: 10px 10px 0px 10px">2hand Shop</span>
-            <div class="close"><i class="btn-close"></i></div>
-        </header>
-        <div class="content">
-            <div class="row">
-                <div class="col">Tên sản phẩm</div>
-                <div class="col">Áo thun đơn giản</div>
-                <hr>
-            </div>
-            <div class="row">
-                <div class="col">Số lượng</div>
-                <div class="col">1</div><hr>
-            </div>
-            <div class="row">
-                <div class="col">Giá tiền</div>
-                <div class="col">200.000đ</div><hr>
-            </div>
-            <div class="row">
-                <div class="col">Người bán</div>
-                <div class="col">Nguyễn Văn An</div><hr>
-            </div>
-            <div class="row">
-                <div class="col">Tình trạng</div>
-                <div class="col">Người bán đang gói hàng</div><hr>
-            </div>
-        </div>
-    </div>
 
     <!-- toolbar (position: fixed) -->
     <div id="toolbar" class="p-1">
@@ -364,16 +333,6 @@
         function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-
-        const viewBtn = document.querySelector(".more-detail"),
-            popup = document.querySelector(".popup"),
-            close = popup.querySelector(".close");
-        viewBtn.onclick = ()=>{
-            popup.classList.toggle("show");
-        }
-        close.onclick = ()=>{
-            viewBtn.click();
         }
     </script>
 
