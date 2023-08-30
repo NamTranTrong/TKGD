@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 ::selection{
     color: #fff;
@@ -89,6 +88,7 @@ header .close:hover{
 }
 .popup .content{
     margin: 35px 0px 0px 0px;
+    text-align: left;
 }
 .popup .icons{
     margin: 15px 0 20px 0;
