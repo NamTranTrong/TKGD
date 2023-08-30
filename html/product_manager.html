@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/scrollup.css" />
     <link rel="stylesheet" href="../css/toolbar.css" />
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/menu.css"/>
+    <link rel="stylesheet" href="../css/modal.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -240,6 +241,7 @@
       </div>
     </div>
   </div>
+
 </div>
     <div class="dummy-element"></div>
 
@@ -295,5 +297,13 @@
     </div>
   </div>
 </footer>
+<script>
+  const viewBtn = document.querySelector(".card-faq"),
+          popup = document.querySelector(".popup"),
+          close = popup.querySelector(".close");
+  viewBtn.onclick = ()=>{
+    popup.classList.toggle("show");
+  }
+</script>
 </body>
 </html>

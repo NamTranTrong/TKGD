@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="../css/scrollup.css" />
       <link rel="stylesheet" href="../css/toolbar.css" />
       <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/modal.css">
 
       <!-- fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,11 +25,20 @@
 
     <link rel="icon" href="../images/logo-shop.png" type="image/png">
     <title>Tài khoản</title>
+    <style>
+        .content p{
+            font-size: 18px;
+        }
+        input{
+            border: 0.5px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- header -->
     <header>
-    <nav class="navbar navbar-expand-sm bg-white navbar-light">
+        <nav class="navbar navbar-expand-sm bg-white navbar-light">
         <div class="container-fluid">
             <div class="col-sm-5 col">
                 <div class="collapse navbar-collapse collapsibleNavbar justify-content-end">
@@ -99,12 +109,12 @@
             </div>
         </div>
     </nav>
-</header>
+    </header>
     <div class="dummy-element"></div>
-        <div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-3">
-                <div class="edit-avt">
+                <div id="edit-avt">
                     <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181660.png" alt="Avatar" style="border-radius: 50%; width: 50%; margin-left: 25%">
                 </div>
                 <div class="list-group">
@@ -123,7 +133,7 @@
                                 <p class="mb-0">Họ tên</p>
                             </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">Lê Thúy Nga</p>
+                                <p id="old_name" class="text-muted mb-0">Lê Thúy Nga</p>
                             </div>
                         </div>
                         <hr>
@@ -132,7 +142,7 @@
                                 <p class="mb-0">Email</p>
                             </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">nga123@gmail.com</p>
+                                <p id="old_email" class="text-muted mb-0">nga123@gmail.com</p>
                             </div>
                         </div>
                         <hr>
@@ -141,7 +151,7 @@
                                 <p class="mb-0">Số điện thoại</p>
                             </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">(012) 345-6789</p>
+                                <p id="old_sdt" class="text-muted mb-0">(012) 345-6789</p>
                             </div>
                         </div>
                         <hr>
@@ -150,7 +160,7 @@
                                 <p class="mb-0">Username</p>
                               </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">nga123</p>
+                                <p id="old_username" class="text-muted mb-0">nga123</p>
                             </div>
                         </div>
                         <hr>
@@ -159,7 +169,7 @@
                                 <p class="mb-0">Địa chỉ</p>
                             </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">227 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
+                                <p id="old_addr" class="text-muted mb-0">227 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
                             </div>
                         </div>
                         <hr>
@@ -167,20 +177,74 @@
                             <div class="col-sm-3">
                                 <p class="mb-0">Chỉnh sửa ảnh đại diện</p>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-sm-7">
                                 <form action="">
-                                    <input type="file" id="myfile" name="myfile" multiple>
+                                    <input id="avt" type="file" name="myfile" accept="image/*" multiple>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-warning" style="float: right;">
+                <button type="button" class="btn btn-warning" style="float: right;" id="edit">
                     <i class="fa-solid fa-user-pen"></i> Chỉnh sửa thông tin
                 </button>
             </div>
         </div>
-      </div>
+    </div>
+    <div class="popup align-content-center" style="width: 500px; height: 450px; font-size: 20px">
+        <header>
+            <span style="margin: 10px 10px 0px 10px">2hand Shop</span>
+            <div class="close"><i class="btn-close"></i></div>
+            <br>
+        </header>
+        <div class="content">
+            <div class="card-body">
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Họ tên</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="name" class="text-muted mb-0" type="text" placeholder="Lê Thúy Nga">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="email" class="text-muted mb-0" type="text" placeholder="nga123@gmail.com">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Số điện thoại</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="sdt" class="text-muted mb-0" type="text" placeholder="(012) 345-6789">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Username</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="username" class="text-muted mb-0" type="text" placeholder="nga123">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Địa chỉ</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="addr" class="text-muted mb-0" type="text" placeholder="227 Nguyễn Văn Cừ, Quận 5, TP.HCM">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px">
+                    <button type="button" class="btn btn-success">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="dummy-element"></div>
 
     <footer class="footer-distributed position-relative bottom-0">
@@ -235,5 +299,37 @@
             </div>
         </div>
     </footer>
+    <script>
+        const viewBtn = document.getElementById("edit"),
+            saveBtn = document.querySelector(".btn-success"),
+            changeBtn = document.getElementById("avt"),
+            container = document.querySelector(".container"),
+            popup = document.querySelector(".popup"),
+            close = popup.querySelector(".close");
+            viewBtn.onclick = ()=>{
+                popup.classList.toggle("show");
+            }
+            close.onclick = ()=>{
+                viewBtn.click();
+            }
+            saveBtn.onclick = ()=> {
+                if (document.getElementById("name").value.length != 0) {
+                    document.getElementById("old_name").innerText = document.getElementById("name").value;
+                }
+                if (document.getElementById("email").value.length != 0) {
+                    document.getElementById("old_email").innerText = document.getElementById("email").value;
+                }
+                if (document.getElementById("sdt").value.length != 0) {
+                    document.getElementById("old_sdt").innerText = document.getElementById("sdt").value;
+                }
+                if (document.getElementById("username").value.length != 0) {
+                    document.getElementById("old_username").innerText = document.getElementById("username").value;
+                }
+                if (document.getElementById("addr").value.length != 0) {
+                    document.getElementById("old_addr").innerText = document.getElementById("addr").value;
+                }
+                viewBtn.click();
+            }
+    </script>
 </body>
 </html>
