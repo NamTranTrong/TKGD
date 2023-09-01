@@ -239,7 +239,7 @@ a {
 }
 
 a:hover {
-    color: #0a58ca
+    color: #000;
 }
 
 a:not([href]):not([class]),
@@ -4885,7 +4885,7 @@ fieldset:disabled .btn {
     top: -10px;
     color: green;
     text-decoration: none;
-    background-color: lightyellow;
+    background-color: #e5e4e4f8;
 }
 
 .card>hr {
